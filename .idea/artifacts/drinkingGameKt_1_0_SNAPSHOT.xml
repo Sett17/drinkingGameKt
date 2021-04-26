@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="drinkingGameKt-1.0-SNAPSHOT">
+    <output-path>C:\Users\sett\IdeaProjects\drinkingGameKt\build\libs</output-path>
+    <root id="archive" name="drinkingGameKt-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="drinkingGameKt.main" />
+    </root>
+  </artifact>
+</component>
