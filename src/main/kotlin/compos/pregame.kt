@@ -1,12 +1,12 @@
+@file:Suppress("SuspiciousCollectionReassignment")
+
 package compos
 
 import kotlinx.browser.document
 import kotlinx.html.*
-import kotlinx.html.dom.append
 import kotlinx.html.dom.create
 import kotlinx.html.js.*
 import org.w3c.dom.HTMLDivElement
-import org.w3c.dom.Node
 
 fun pregame(): HTMLDivElement {
     return document.create.div {

@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.KotlinJsOptions
+
 plugins {
     kotlin("js") version "1.4.32"
 }

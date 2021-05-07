@@ -2,14 +2,12 @@ package compos
 
 import kotlinx.browser.document
 import kotlinx.html.div
-import kotlinx.html.dom.append
 import kotlinx.html.dom.create
 import kotlinx.html.id
 import kotlinx.html.js.div
 import kotlinx.html.span
 import kotlinx.html.unsafe
 import org.w3c.dom.HTMLDivElement
-import org.w3c.dom.Node
 
 fun play(): HTMLDivElement {
     return document.create.div {

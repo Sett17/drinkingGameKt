@@ -1,5 +1,8 @@
+@file:Suppress("SuspiciousCollectionReassignment")
+
 package compos
 
+import card
 import kotlinx.browser.document
 import kotlinx.html.*
 import kotlinx.html.dom.append
@@ -7,7 +10,7 @@ import kotlinx.html.dom.create
 import org.w3c.dom.HTMLElement
 import org.w3c.dom.Node
 
-fun card(): HTMLElement {
+fun cardCompo(data: card): HTMLElement {
     return document.create.div {
         id = "card"
         div {
@@ -15,17 +18,17 @@ fun card(): HTMLElement {
             classes += "blur"
             div {
                 id = "card-title"
-                +"*TITLE*"
+                +data.title
             }
             div {
                 id = "card-text"
-                +"*TEXT*"
+                +data.text
             }
             div {
                 id = "card-footer"
                 div {
                     id = "card-set"
-                    +"*SET*"
+                    +data.set
                 }
                 div {
                     id = "card-alt"
@@ -41,7 +44,7 @@ fun card(): HTMLElement {
                                     <stop stop-color="#7A00E5" offset="80%"/>
                                     <stop stop-color="#D300C9" offset="100%"/>
                                 </linearGradient>
-                                <path fill="*COLOR*" d="m2,31 v-11 h11 v11 a1,.5,0,0,1,-11,0"/>
+                                <path fill="hsl('${120 - 60 * (options.difficulty.level ?: 0)}', 90%, 64%)" d="m2,31 v-11 h11 v11 a1,.5,0,0,1,-11,0"/>
                                 <path stroke="floralwhite" fill="transparent" stroke-width="2px"
                                     d="M2,31 v-18 c0,-3,3,0,3,-10 h5 m3,10 c0,-3,-3,0,-3,-10 h-1 m4,10 v18 a1,.5,0,0,1,-11,0" />
                              </svg>

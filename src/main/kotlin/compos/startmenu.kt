@@ -1,19 +1,25 @@
+@file:Suppress("SuspiciousCollectionReassignment")
+
 package compos
 
+import changePage
 import kotlinx.browser.document
+import kotlinx.browser.sessionStorage
 import kotlinx.html.button
 import kotlinx.html.classes
 import kotlinx.html.div
-import kotlinx.html.dom.append
 import kotlinx.html.dom.create
 import kotlinx.html.id
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLDivElement
-import org.w3c.dom.HTMLElement
-import org.w3c.dom.Node
+import shareRoutine
 
 fun startmenu(): HTMLDivElement {
+
+    game.isRunning = false
+    sessionStorage.clear()
+
     return document.create.div {
         id = "root"
         div {
@@ -27,7 +33,7 @@ fun startmenu(): HTMLDivElement {
                 classes += "startMenu-btn"
                 classes += "btn"
                 onClickFunction = { _ ->
-//                TODO: 4/26/2021 changePage play
+                    changePage((pregame()))
                 }
                 +"Spielen!"
             }
@@ -36,7 +42,7 @@ fun startmenu(): HTMLDivElement {
                 classes += "startMenu-btn"
                 classes += "btn"
                 onClickFunction = { _ ->
-//                TODO: 4/26/2021 changePage options
+                    changePage(options())
                 }
                 +"Einstellungen"
             }
@@ -51,7 +57,7 @@ fun startmenu(): HTMLDivElement {
                 classes += "startMenu-btn"
                 classes += "btn"
                 onClickFunction = { _ ->
-//               TODO: 4/26/2021 shareRoutine
+                    shareRoutine()
                 }
                 +"Teilen"
             }
