@@ -1,4 +1,4 @@
-const endCard = {"title": "Das wars", "text": "Danke fürs spielen!\nWische einfach diese Karte weg.", "sips": -1, "all": true, "set": "Ehere"}
+const endCard = {"title": "Das wars", "text": "Danke fürs spielen!\nWische einfach diese Karte weg.", "sips": -1, "all": true, "set": "Ehre"}
 const cards = [
     {
         "title": "Schusselig?",
