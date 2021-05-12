@@ -1,4 +1,12 @@
 # Project exclude paths
 /.gradle/
 /build/
-/build/classes/kotlin/main/
+!build/
+build/*
+!build/js/
+build/js/*
+!build/js/packages/
+build/js/packages/*
+!build/js/packages/remote/
+build/js/packages/remote/*
+!build/js/packages/remote/kotlin/
