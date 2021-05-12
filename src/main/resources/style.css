@@ -156,7 +156,7 @@ a {
     overflow-y: auto;
 }
 
-.option-switch {
+.options-switch {
     width: 85vw;
     height: 10vh;
     display: flex;
@@ -251,7 +251,7 @@ a {
     justify-content: space-evenly;
 }
 
-#pregame-playerlist {
+#pregame-playerList {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,14 +262,14 @@ a {
     overflow-x: hidden;
 }
 
-#pregame-playerlist span {
+#pregame-playerList span {
     display: block;
     width: 50%;
     text-align: center;
     border-bottom: floralwhite 1px solid;
 }
 
-#pregame-playerlist span:last-of-type {
+#pregame-playerList span:last-of-type {
     border-bottom: none;
 }
 
@@ -376,11 +376,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: clamp(.8em, 6.7vw, 1em);
+    font-size: clamp(0.3em, 6.7vw, 1em);
     word-break: break-word;
     text-align: center;
     width: 85%;
     padding-top: 5%;
+
+    pointer-events: none;
 }
 
 #card-text {
@@ -391,9 +393,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(.3em, 5vw, .7em);
+    font-size: clamp(.3em, 4.6vw, .7em);
     text-align: center;
     width: 80%;
+    pointer-events: none;
 }
 
 #card-footer {
@@ -403,6 +406,7 @@ a {
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    pointer-events: none;
 }
 
 #card-set {

@@ -15,6 +15,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test-js"))
     implementation("org.jetbrains.kotlinx:kotlinx-html:0.7.2")
+    implementation(kotlin("script-runtime"))
 }
 
 kotlin {

@@ -5,15 +5,16 @@ object options {
         difficulty.updateView()
         rumble.updateView()
     }
+
     object difficulty {
         var level: Int? = null
             set(value) {
-                session["difficulty.level"] = level
+                session["difficulty.level"] = value
                 field = value
                 updateView()
             }
             get() {
-                field = field ?: kotlin.run { session["difficulty.level"] as? Int } ?: kotlin.run { 0 }
+                field = field ?: kotlin.run { session["difficulty.level"] as? Int } ?: 0
                 return field
             }
 
@@ -41,7 +42,7 @@ object options {
     object rumble {
         var state: Boolean? = null
             set(value) {
-                session["rumble.state"] = state
+                session["rumble.state"] = value
                 field = value
                 updateView()
             }

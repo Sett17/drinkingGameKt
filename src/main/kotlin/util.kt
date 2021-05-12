@@ -6,16 +6,17 @@ import kotlinx.browser.sessionStorage
 import kotlinx.browser.window
 import kotlinx.dom.addClass
 import kotlinx.dom.removeClass
+import kotlinx.html.TITLE
+import kotlinx.html.dom.create
+import kotlinx.html.id
+import kotlinx.html.js.div
+import kotlinx.html.js.onClickFunction
+import kotlinx.html.span
 import org.w3c.dom.Element
 import org.w3c.dom.get
 import org.w3c.dom.set
 import kotlin.math.*
 import kotlin.random.Random
-
-private val Boolean?.isNullOrFalse: Boolean
-    get() {
-        return this == null || this == false
-    }
 
 fun isMobile(): Boolean {
     return window.navigator.maxTouchPoints > 1
@@ -60,25 +61,40 @@ fun coerce(input: Double, min: Double, max: Double): Double {
 fun shareRoutine() {
     rumbler.rumble()
     try {
-        js("navigator.share({url: 'https://drinkingapp-4376b.web.app/', title: 'Trink! Trink!'}).then(function (d) {console.log(d)})")
+        js(
+            "navigator.share({url: 'https://drinkingapp-4376b.web.app/', title: 'Trink! Trink!'}).then(function (d) {" +
+                    "console.log(d)})"
+        )
     } catch (e: Exception) {
         console.log(e)
     }
 }
 
 object interactions {
+
+    object constants {
+        val animTimeRet = 100
+        val animTimeBounce = 80
+        val animTimeOut = 150
+        val animTimeDef = 150
+        val animTimeIn: Int
+            get() {
+                return if (isMobile()) 250 else 100
+            }
+        val turnTime = 5
+    }
+
     var oriX = 0.0
     var oriY = 0.0
     var dX = 0.0
     var dY = 0.0
     var offsetX = 0.0
-    var offsetY = 0.0
+    var offsetY = 40.0
     var angle = 0.0
     var isMoving = false
     var shouldRotate = true
     var rotateTimeout = 5
     var lastPoint = Pair(0.0, 0.0)
-
     fun Element.addInteractions() {
         this.addEventListener("touchstart", {
             it.target.asDynamic().style.transition = "all ${constants.turnTime}ms"
@@ -148,7 +164,7 @@ object interactions {
                         angle = ((((coerce(dX, 0.0, 200.0) - 0) / (200)) * (20)) * PI) / 180
                         document.querySelector("#play-name").asDynamic().style.opacity = ((coerce(dX, 0.0, 100.0) - 0) / (100)) * (0.0 - 1.0) + 1.0
                     } else {
-                        angle = ((((coerce(-dX, 0.0, 200.0) - 0) / (200)) * (20)) * PI) / 180
+                        angle = (-(((coerce(-dX, 0.0, 200.0) - 0) / (200)) * (20)) * PI) / 180
                         document.querySelector("#play-name").asDynamic().style.opacity = ((coerce(-dX, 0.0, 100.0) - 0) / (100)) * (0.0 - 1.0) + 1.0
                     }
                     it.target.asDynamic().style.transform = getMatrix(angle, dX + offsetX, dY + offsetY)
@@ -191,18 +207,6 @@ object interactions {
         return "matrix(${cos(angle)}, ${sin(angle)}, ${sin(-angle)}, ${cos(angle)}, $tx, $ty)"
     }
 
-    object constants {
-        val animTimeRet = 100
-        val animTimeBounce = 80
-        val animTimeOut = 150
-        val animTimeDef = 150
-        val animTimeIn: Int
-            get() {
-                return if (isMobile()) 250 else 100
-            }
-        val turnTime = 5
-    }
-
 }
 
 object rumbler {
@@ -221,10 +225,10 @@ object game {
         set(value) {
             session["isRunning"] = value
             field = value
-            if (value.isNullOrFalse) {
-                rumbler.rumble(2.5)
-                changePage(startmenu())
-            }
+//            if (value.isNullOrFalse) {
+//                rumbler.rumble(2.5)
+//                changePage(startmenu())
+//            }
         }
     var askNextOpportunity: Boolean? = null
         get() {
@@ -249,6 +253,7 @@ object game {
 }
 
 external val cards: Array<card>
+external val endCard: card
 
 object availableCards {
     private var isLastCard = false
@@ -259,7 +264,7 @@ object availableCards {
         get() {
             isLastCard = field.size == 1
             if (field.isEmpty()) {
-                field = (session["deck"] as? Array<card>).whenNull { cards.copyOf().also { it.shuffle() } } as Array<card>
+                field = (session["deck"] as? Array<card>).whenNull { cards.copyOf().also { it.shuffle() } }
             }
             return field
         }
@@ -269,20 +274,22 @@ object availableCards {
         }
 
     fun nextCard(): card {
-        cardCounter--
+        cardCounter++
         return if (!isLastCard && cardCounter < cardLimit) {
             val res = deck.first()
             deck = deck.drop(1).toTypedArray()
             res
         } else {
-            // TODO: 4/26/2021 jo halt das hier; 05/06/2021 kp mehr was das bedeuten soll ¯\_(ツ)_/¯l; spiel beenden glaub ich
-            deck.first()
+            game.isRunning = false
+            endCard
         }
     }
 
     fun putCard() {
+        document.querySelector("#play-name").asDynamic().style.opacity = "1.0"
+        val nc = nextCard()
+        document.querySelector("#card-wrapper")!!.innerHTML = cardCompo(nc).outerHTML
         val cardElement = document.querySelector("#card")!!
-        cardElement.outerHTML = cardCompo(nextCard()).toString()
         val cardDynamic = cardElement.asDynamic()
         cardDynamic.style.transition = "all 0ms"
         cardDynamic.style.transform = "matrix(0.01, 0, 0, 0.01, 0, ${interactions.offsetY})"
@@ -299,10 +306,10 @@ object availableCards {
 }
 
 object playerList {
-    var players: Array<player> = emptyArray()
+    var players: Array<String> = emptyArray()
         get() {
             if (field.isEmpty()) {
-                field = (session["players"] as? Array<player>).whenNull { emptyArray() } as Array<player>
+                field = (session["players"] as? Array<String>).whenNull { emptyArray() }
             }
             return field
         }
@@ -313,30 +320,59 @@ object playerList {
 
     fun add(name: String) {
         players = players.toMutableList().also {
-            it.add(object : player {
-                override val name = name
-            })
+            it.add(name)
         }.toTypedArray()
+        update()
     }
 
-    fun randomPlayer(): player {
+    fun remove(name: String) {
+        players = players.toMutableList().also { it.remove(name) }.toTypedArray()
+        update()
+    }
+
+    fun randomPlayer(): String {
         return players[Random.nextInt(players.size)]
     }
-}
 
+    fun update() {
+//        document.querySelector("#pregame-playerList")!!.innerHTML = ""
+        val newList = document.create.div { id = "pregame-playerList" }
+        players.forEach {
+            val each = it
+            newList.append(document.create.span {
+                onClickFunction = {
+                    remove(each)
+                }
+                +each
+            })
+        }
+        document.querySelector("#pregame-playerList")!!.replaceWith(newList)
+    }
+}
 
 fun <T> T?.whenNull(function: () -> T): T {
     return this ?: function()
 }
 
-interface card {
-    val title: String
-    val text: String
-    val sips: Int
-    val all: Boolean
-    val set: String
+fun String.replaceMultiple(regex: Regex, function: () -> String): String {
+    var str = this
+    repeat(regex.findAll(this).toList().size) {
+        str = str.replaceFirst(regex, function.invoke())
+    }
+    return str
 }
 
-interface player {
-    val name: String
-}
+//fun card(title: String, text: String, sips: Int, all: Boolean, set: String) {
+//    val card: dynamic = object {}
+//    card.title = title
+//    card.text = text
+//    card.sips = sips
+//    card.all = all
+//    card.set = set
+//}
+
+data class card(var title: String, var text: String, var sips: Int, var all: Boolean, var set: String)
+
+//interface player {
+//    val name: String
+//}

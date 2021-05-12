@@ -1,3 +1,4 @@
+const endCard = {"title": "Das wars", "text": "Danke fürs spielen!\nWische einfach diese Karte weg.", "sips": -1, "all": true, "set": "Ehere"}
 const cards = [
     {
         "title": "Schusselig?",
@@ -448,7 +449,7 @@ const cards = [
         "set": "Pflicht"
     },
     {
-        "title": "Orangenbaumblätter",
+        "title": "Orangenbaum blätter",
         "text": "Lieder von Peter Fox. [NAME1] beginnt. Wem keins mehr einfällt trinkt!",
         "sips": 3,
         "all": true,

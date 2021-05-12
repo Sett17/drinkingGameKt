@@ -3,8 +3,10 @@
 package compos
 
 import changePage
+import isMobile
 import kotlinx.browser.document
 import kotlinx.browser.sessionStorage
+import kotlinx.browser.window
 import kotlinx.html.button
 import kotlinx.html.classes
 import kotlinx.html.div
@@ -13,12 +15,15 @@ import kotlinx.html.id
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLDivElement
+import org.w3c.dom.get
 import shareRoutine
 
 fun startmenu(): HTMLDivElement {
 
+    window.location.hash = "#startmenu"
+
     game.isRunning = false
-    sessionStorage.clear()
+//    sessionStorage.clear()
 
     return document.create.div {
         id = "root"
@@ -33,7 +38,7 @@ fun startmenu(): HTMLDivElement {
                 classes += "startMenu-btn"
                 classes += "btn"
                 onClickFunction = { _ ->
-                    changePage((pregame()))
+                    changePage((pregame())) { playerList.update() }
                 }
                 +"Spielen!"
             }
@@ -42,7 +47,19 @@ fun startmenu(): HTMLDivElement {
                 classes += "startMenu-btn"
                 classes += "btn"
                 onClickFunction = { _ ->
-                    changePage(options())
+                    changePage(options()) {
+                        val wrapper = document.querySelectorAll(".options-wrapperInside")
+                        options.updateAllViews()
+                        if (isMobile()) {
+                            repeat(wrapper.length) {
+                                wrapper[it].asDynamic().style.flexDirection = "column"
+                            }
+                        } else {
+                            repeat(wrapper.length) {
+                                wrapper[it].asDynamic().style.flexDirection = "row"
+                            }
+                        }
+                    }
                 }
                 +"Einstellungen"
             }

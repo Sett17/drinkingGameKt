@@ -2,13 +2,20 @@
 
 package compos
 
+import changePage
+import isMobile
 import kotlinx.browser.document
+import kotlinx.browser.window
 import kotlinx.html.*
 import kotlinx.html.dom.create
 import kotlinx.html.js.*
 import org.w3c.dom.HTMLDivElement
+import org.w3c.dom.events.KeyboardEvent
 
 fun pregame(): HTMLDivElement {
+
+    window.location.hash = "#pregame"
+
     return document.create.div {
         id = "root"
         div {
@@ -21,22 +28,35 @@ fun pregame(): HTMLDivElement {
                 type = InputType.text
                 name = "playername"
                 id = "pregame-playernameInp"
+                autoComplete = false
                 placeholder = "Name"
-                onFocusFunction = { _ ->
-                    // TODO: 4/26/2021 inpFocusIn
+                onFocusFunction = {
+                    if (isMobile()) {
+                        document.querySelector("#pregame-playerList")?.classList?.add("pregame-hidden")
+                        document.querySelector("#pregame-playerBtn")?.classList?.add("pregame-hidden")
+                        document.querySelector("#pregame-addPlayerBtn")?.classList?.remove("pregame-hidden")
+                    }
                 }
-                onFocusOutFunction = { _ ->
-                    // TODO: 4/26/2021 inpFocusOut
+                onFocusOutFunction = {
+                    inpFocusOut()
                 }
-                onKeyPressFunction = { _ ->
-                    // TODO: 4/26/2021 detectInpKeys(keys)
+                onKeyUpFunction = {
+                    it as KeyboardEvent
+                    if (it.key == "Enter") {
+                        document.querySelector("#pregame-addPlayerBtn").asDynamic().click()
+                    }
                 }
             }
             button {
                 id = "pregame-addPlayerBtn"
                 classes += "btn"
-                onClickFunction = { _ ->
-                    // TODO: 4/26/2021 rumble; addPlayer
+                onClickFunction = {
+                    rumbler.rumble()
+                    document.querySelector("#pregame-playernameInp").asDynamic().value?.toString()?.trim()?.capitalize()?.let {
+                        playerList.add(it)
+                        inpFocusOut()
+                        document.querySelector("#pregame-playernameInp").asDynamic().value = ""
+                    }
                 }
                 +"+"
             }
@@ -48,12 +68,22 @@ fun pregame(): HTMLDivElement {
                 button {
                     id = "pregame-playBtn"
                     classes += "btn"
-                    onClickFunction = { _ ->
-                        // TODO: 4/26/2021 rumble; changePage'play'
+                    onClickFunction = {
+                        rumbler.rumble()
+                        changePage(play()) { availableCards.putCard() }
                     }
                     +"Trinken!"
                 }
             }
         }
+    }
+}
+
+fun inpFocusOut() {
+    if (isMobile() && document.querySelector("#pregame-playernameInp").asDynamic().value.trim().length <= 1) {
+        document.querySelector("#pregame-playerList")?.classList?.remove("pregame-hidden")
+        document.querySelector("#pregame-playerBtn")?.classList?.remove("pregame-hidden")
+        document.querySelector("#pregame-addPlayerBtn")?.classList?.add("pregame-hidden")
+        playerList.update()
     }
 }
