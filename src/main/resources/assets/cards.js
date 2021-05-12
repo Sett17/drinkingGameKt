@@ -351,7 +351,7 @@ const cards = [
         "set": "Minigame"
     },
     {
-        "title": "Warum nicht färben_",
+        "title": "Warum nicht färben?",
         "text": "Die Schwarzhaarigen unter euch trinken",
         "sips": 3,
         "all": true,

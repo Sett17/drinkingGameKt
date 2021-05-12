@@ -18,6 +18,13 @@ fun cardCompo(data: card): HTMLElement {
     data.set = (js("data.set") as String)
     data.all = (js("data.all") as Boolean)
     data.sips = (js("data.sips") as Int)
+    var cardPlayer = ""
+    if (data.all) {
+        document.querySelector("#play-name")!!.textContent = "Alle"
+    } else {
+
+        document.querySelector("#play-name")!!.textContent = playerList.randomPlayer().also { cardPlayer = it }
+    }
     return document.create.div {
         id = "card"
         classes += "blur"
@@ -27,7 +34,15 @@ fun cardCompo(data: card): HTMLElement {
         }
         div {
             id = "card-text"
-            +data.text.replaceMultiple(Regex("\\[NAME\\d+]")) { playerList.randomPlayer() }
+            +data.text.replaceMultiple(
+                Regex("\\[NAME\\d+]")
+            ) {
+                var zz = playerList.randomPlayer()
+                while (zz === cardPlayer) {
+                    zz = playerList.randomPlayer()
+                }
+                return@replaceMultiple zz
+            }
         }
         div {
             id = "card-footer"

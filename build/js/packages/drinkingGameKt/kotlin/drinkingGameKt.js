@@ -5350,6 +5350,10 @@
   function let_0(_this_, block) {
     return block(_this_);
   }
+  function also(_this_, block) {
+    block(_this_);
+    return _this_;
+  }
   function repeat(times, action) {
     var inductionVariable = 0;
     if (inductionVariable < times)
@@ -5362,10 +5366,6 @@
   }
   function run_0(_this_, block) {
     return block(_this_);
-  }
-  function also(_this_, block) {
-    block(_this_);
-    return _this_;
   }
   function apply(_this_, block) {
     block(_this_);
@@ -20706,15 +20706,29 @@
     var tmp_7 = data;
     var tmp_8 = data.sips;
     tmp_7._sips = (!(tmp_8 == null) ? typeof tmp_8 === 'number' : false) ? tmp_8 : THROW_CCE();
-    var tmp0_div_0 = _get_create_(document);
-    var tmp1_div_0 = null;
-    var tmp0_visitAndFinalize_0_2 = new DIV(attributesMapOf('class', tmp1_div_0), tmp0_div_0);
-    return visitTagAndFinalize(tmp0_visitAndFinalize_0_2, tmp0_div_0, _no_name_provided_$factory_55(data));
+    var cardPlayer = {_v: ''};
+    if (data._all) {
+      ensureNotNull(document.querySelector('#play-name')).textContent = 'Alle';
+    } else {
+      var tmp_9 = ensureNotNull(document.querySelector('#play-name'));
+      var tmp0_also_0 = playerList_getInstance().randomPlayer();
+      cardPlayer._v = tmp0_also_0;
+      tmp_9.textContent = tmp0_also_0;
+    }
+    var tmp1_div_0 = _get_create_(document);
+    var tmp2_div_0 = null;
+    var tmp0_visitAndFinalize_0_2 = new DIV(attributesMapOf('class', tmp2_div_0), tmp1_div_0);
+    return visitTagAndFinalize(tmp0_visitAndFinalize_0_2, tmp1_div_0, _no_name_provided_$factory_55(data, cardPlayer));
   }
-  function _no_name_provided__86() {
+  function _no_name_provided__86($cardPlayer) {
+    this._$cardPlayer = $cardPlayer;
   }
   _no_name_provided__86.prototype.invoke_73 = function () {
-    return playerList_getInstance().randomPlayer();
+    var zz_6_13 = playerList_getInstance().randomPlayer();
+    while (zz_6_13 === this._$cardPlayer._v) {
+      zz_6_13 = playerList_getInstance().randomPlayer();
+    }
+    return zz_6_13;
   };
   _no_name_provided__86.$metadata$ = {
     kind: 'class',
@@ -20723,8 +20737,8 @@
   function _no_name_provided__87() {
   }
   _no_name_provided__87.prototype.invoke_206 = function ($this$unsafe) {
-    var tmp0_elvis_lhs_6_12_23 = difficulty_getInstance()._get_level__2();
-    $this$unsafe.raw_2(trimIndent('' + '\n                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="36"\n                                 viewBox="0 0 15 36" xml:space="preserve" style="background-color: transparent">\n                                <linearGradient id="rainbow" x1="0" x2="0" y1="0" y2="100%">\n                                    <stop stop-color="#FF0000" offset="0%"/>\n                                    <stop stop-color="#FF7F00" offset="20%"/>\n                                    <stop stop-color="#00BC3F" offset="40%"/>\n                                    <stop stop-color="#0068FF" offset="60%"/>\n                                    <stop stop-color="#7A00E5" offset="80%"/>\n                                    <stop stop-color="#D300C9" offset="100%"/>\n                                <\/linearGradient>\n                                <path fill="hsl(' + (120 - imul(60, tmp0_elvis_lhs_6_12_23 == null ? 0 : tmp0_elvis_lhs_6_12_23) | 0) + ', 90%, 64%)" d="m2,31 v-11 h11 v11 a1,.5,0,0,1,-11,0"/>\n                                <path stroke="floralwhite" fill="transparent" stroke-width="2px"\n                                    d="M2,31 v-18 c0,-3,3,0,3,-10 h5 m3,10 c0,-3,-3,0,-3,-10 h-1 m4,10 v18 a1,.5,0,0,1,-11,0" />\n                             <\/svg>\n                        '));
+    var tmp0_elvis_lhs_6_12_24 = difficulty_getInstance()._get_level__2();
+    $this$unsafe.raw_2(trimIndent('' + '\n                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="36"\n                                 viewBox="0 0 15 36" xml:space="preserve" style="background-color: transparent">\n                                <linearGradient id="rainbow" x1="0" x2="0" y1="0" y2="100%">\n                                    <stop stop-color="#FF0000" offset="0%"/>\n                                    <stop stop-color="#FF7F00" offset="20%"/>\n                                    <stop stop-color="#00BC3F" offset="40%"/>\n                                    <stop stop-color="#0068FF" offset="60%"/>\n                                    <stop stop-color="#7A00E5" offset="80%"/>\n                                    <stop stop-color="#D300C9" offset="100%"/>\n                                <\/linearGradient>\n                                <path fill="hsl(' + (120 - imul(60, tmp0_elvis_lhs_6_12_24 == null ? 0 : tmp0_elvis_lhs_6_12_24) | 0) + ', 90%, 64%)" d="m2,31 v-11 h11 v11 a1,.5,0,0,1,-11,0"/>\n                                <path stroke="floralwhite" fill="transparent" stroke-width="2px"\n                                    d="M2,31 v-18 c0,-3,3,0,3,-10 h5 m3,10 c0,-3,-3,0,-3,-10 h-1 m4,10 v18 a1,.5,0,0,1,-11,0" />\n                             <\/svg>\n                        '));
   };
   _no_name_provided__87.prototype.invoke_81 = function (p1) {
     this.invoke_206((!(p1 == null) ? isInterface(p1, Unsafe) : false) ? p1 : THROW_CCE());
@@ -20740,26 +20754,26 @@
   _no_name_provided__88.prototype.invoke_100 = function (_this__0) {
     var tmp;
     if (this._$data._sips >= 0) {
-      var tmp0_subject_6_11_17_28 = difficulty_getInstance()._get_level__2();
+      var tmp0_subject_6_11_17_29 = difficulty_getInstance()._get_level__2();
       {
-        var mul_5_10_16_27;
-        switch (tmp0_subject_6_11_17_28) {
+        var mul_5_10_16_28;
+        switch (tmp0_subject_6_11_17_29) {
           case 0:
-            mul_5_10_16_27 = 0.5;
+            mul_5_10_16_28 = 0.5;
             break;
           case 1:
-            mul_5_10_16_27 = 1.0;
+            mul_5_10_16_28 = 1.0;
             break;
           case 2:
-            mul_5_10_16_27 = 2.24;
+            mul_5_10_16_28 = 2.24;
             break;
-          default:mul_5_10_16_27 = 1.0;
+          default:mul_5_10_16_28 = 1.0;
             break;
         }
       }
-      var tmp0_ceil_0_7_12_18_29 = this._$data._sips * mul_5_10_16_27;
-      var tmp0_unsafeCast_0_1_8_13_19_30 = Math.ceil(tmp0_ceil_0_7_12_18_29);
-      tmp = '' + tmp0_unsafeCast_0_1_8_13_19_30;
+      var tmp0_ceil_0_7_12_18_30 = this._$data._sips * mul_5_10_16_28;
+      var tmp0_unsafeCast_0_1_8_13_19_31 = Math.ceil(tmp0_ceil_0_7_12_18_30);
+      tmp = '' + tmp0_unsafeCast_0_1_8_13_19_31;
     } else {
       tmp = '\u221E';
     }
@@ -20794,9 +20808,9 @@
   _no_name_provided__90.prototype.invoke_113 = function (_this__0) {
     _set_id_(_this__0, 'card-alt');
     unsafe(_this__0, _no_name_provided_$factory_62());
-    var tmp0_span_0_7_13_24 = null;
-    var tmp0_visit_0_2_8_14_25 = new SPAN(attributesMapOf('class', tmp0_span_0_7_13_24), _this__0._get_consumer__21());
-    visitTag(tmp0_visit_0_2_8_14_25, _no_name_provided_$factory_63(this._$data_1));
+    var tmp0_span_0_7_13_25 = null;
+    var tmp0_visit_0_2_8_14_26 = new SPAN(attributesMapOf('class', tmp0_span_0_7_13_25), _this__0._get_consumer__21());
+    visitTag(tmp0_visit_0_2_8_14_26, _no_name_provided_$factory_63(this._$data_1));
   };
   _no_name_provided__90.prototype.invoke_81 = function (p1) {
     this.invoke_113(p1 instanceof DIV ? p1 : THROW_CCE());
@@ -20821,14 +20835,15 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__92($data) {
+  function _no_name_provided__92($data, $cardPlayer) {
     this._$data_3 = $data;
+    this._$cardPlayer_0 = $cardPlayer;
   }
   _no_name_provided__92.prototype.invoke_113 = function (_this__0) {
     _set_id_(_this__0, 'card-text');
     var tmp = this._$data_3._text;
     var tmp_0 = Regex_init_$Create$_0('\\[NAME\\d+]');
-    _this__0.unaryPlus_54(replaceMultiple(tmp, tmp_0, _no_name_provided_$factory_59()));
+    _this__0.unaryPlus_54(replaceMultiple(tmp, tmp_0, _no_name_provided_$factory_59(this._$cardPlayer_0)));
   };
   _no_name_provided__92.prototype.invoke_81 = function (p1) {
     this.invoke_113(p1 instanceof DIV ? p1 : THROW_CCE());
@@ -20843,12 +20858,12 @@
   }
   _no_name_provided__93.prototype.invoke_113 = function (_this__0) {
     _set_id_(_this__0, 'card-footer');
-    var tmp0_div_0_5_16 = null;
-    var tmp0_visit_0_2_6_17 = new DIV(attributesMapOf('class', tmp0_div_0_5_16), _this__0._get_consumer__21());
-    visitTag(tmp0_visit_0_2_6_17, _no_name_provided_$factory_60(this._$data_4));
-    var tmp1_div_0_8_19 = null;
-    var tmp0_visit_0_2_9_20 = new DIV(attributesMapOf('class', tmp1_div_0_8_19), _this__0._get_consumer__21());
-    visitTag(tmp0_visit_0_2_9_20, _no_name_provided_$factory_61(this._$data_4));
+    var tmp0_div_0_5_17 = null;
+    var tmp0_visit_0_2_6_18 = new DIV(attributesMapOf('class', tmp0_div_0_5_17), _this__0._get_consumer__21());
+    visitTag(tmp0_visit_0_2_6_18, _no_name_provided_$factory_60(this._$data_4));
+    var tmp1_div_0_8_20 = null;
+    var tmp0_visit_0_2_9_21 = new DIV(attributesMapOf('class', tmp1_div_0_8_20), _this__0._get_consumer__21());
+    visitTag(tmp0_visit_0_2_9_21, _no_name_provided_$factory_61(this._$data_4));
   };
   _no_name_provided__93.prototype.invoke_81 = function (p1) {
     this.invoke_113(p1 instanceof DIV ? p1 : THROW_CCE());
@@ -20858,8 +20873,9 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__94($data) {
+  function _no_name_provided__94($data, $cardPlayer) {
     this._$data_5 = $data;
+    this._$cardPlayer_1 = $cardPlayer;
   }
   _no_name_provided__94.prototype.invoke_113 = function (_this__0) {
     _set_id_(_this__0, 'card');
@@ -20870,10 +20886,10 @@
     visitTag(tmp0_visit_0_2_7, _no_name_provided_$factory_56(this._$data_5));
     var tmp1_div_0_9 = null;
     var tmp0_visit_0_2_10 = new DIV(attributesMapOf('class', tmp1_div_0_9), _this__0._get_consumer__21());
-    visitTag(tmp0_visit_0_2_10, _no_name_provided_$factory_57(this._$data_5));
-    var tmp2_div_0_13 = null;
-    var tmp0_visit_0_2_14 = new DIV(attributesMapOf('class', tmp2_div_0_13), _this__0._get_consumer__21());
-    visitTag(tmp0_visit_0_2_14, _no_name_provided_$factory_58(this._$data_5));
+    visitTag(tmp0_visit_0_2_10, _no_name_provided_$factory_57(this._$data_5, this._$cardPlayer_1));
+    var tmp2_div_0_14 = null;
+    var tmp0_visit_0_2_15 = new DIV(attributesMapOf('class', tmp2_div_0_14), _this__0._get_consumer__21());
+    visitTag(tmp0_visit_0_2_15, _no_name_provided_$factory_58(this._$data_5));
   };
   _no_name_provided__94.prototype.invoke_81 = function (p1) {
     this.invoke_113(p1 instanceof DIV ? p1 : THROW_CCE());
@@ -20883,8 +20899,8 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided_$factory_55($data) {
-    var i = new _no_name_provided__94($data);
+  function _no_name_provided_$factory_55($data, $cardPlayer) {
+    var i = new _no_name_provided__94($data, $cardPlayer);
     return function (p1) {
       i.invoke_113(p1);
       return Unit_getInstance();
@@ -20897,8 +20913,8 @@
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_57($data) {
-    var i = new _no_name_provided__92($data);
+  function _no_name_provided_$factory_57($data, $cardPlayer) {
+    var i = new _no_name_provided__92($data, $cardPlayer);
     return function (p1) {
       i.invoke_113(p1);
       return Unit_getInstance();
@@ -20911,8 +20927,8 @@
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_59() {
-    var i = new _no_name_provided__86();
+  function _no_name_provided_$factory_59($cardPlayer) {
+    var i = new _no_name_provided__86($cardPlayer);
     return function () {
       return i.invoke_73();
     };
@@ -23880,6 +23896,10 @@
     var tmp1 = tmp0_this._cardCounter;
     tmp0_this._cardCounter = tmp1 + 1 | 0;
     Unit_getInstance();
+    (function () {
+      var $externalVarargReceiverTmp = console;
+      return $externalVarargReceiverTmp.log.apply($externalVarargReceiverTmp, [].concat(['' + this._cardCounter + '/25']));
+    }.call(this));
     var tmp;
     if (!this._isLastCard ? this._cardCounter < 25 : false) {
       var res = first(this._get_deck_());

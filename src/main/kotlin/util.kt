@@ -275,6 +275,7 @@ object availableCards {
 
     fun nextCard(): card {
         cardCounter++
+        console.log("$cardCounter/$cardLimit")
         return if (!isLastCard && cardCounter < cardLimit) {
             val res = deck.first()
             deck = deck.drop(1).toTypedArray()
