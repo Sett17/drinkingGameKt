@@ -20971,12 +20971,12 @@
   }
   function _no_name_provided__95() {
   }
-  _no_name_provided__95.prototype.invoke_306 = function (_anonymous_parameter_0_) {
+  _no_name_provided__95.prototype.invoke_318 = function (_anonymous_parameter_0_) {
     var tmp = startmenu();
     changePage$default(tmp, null, 2, null);
   };
   _no_name_provided__95.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__95.$metadata$ = {
@@ -21003,13 +21003,13 @@
   function _no_name_provided__97($this) {
     this._$this_7 = $this;
   }
-  _no_name_provided__97.prototype.invoke_306 = function (it) {
+  _no_name_provided__97.prototype.invoke_318 = function (it) {
     var tmp = difficulty_getInstance();
     var tmp0_subject_10_14_18_26_29_40 = this._$this_7._get_attributes__21().get_53('data-id');
     tmp._set_level_(tmp0_subject_10_14_18_26_29_40 === '0' ? 0 : tmp0_subject_10_14_18_26_29_40 === '1' ? 1 : tmp0_subject_10_14_18_26_29_40 === '2' ? 2 : 0);
   };
   _no_name_provided__97.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__97.$metadata$ = {
@@ -21018,13 +21018,13 @@
   };
   function _no_name_provided__98() {
   }
-  _no_name_provided__98.prototype.invoke_306 = function (it) {
+  _no_name_provided__98.prototype.invoke_318 = function (it) {
     var tmp = difficulty_getInstance();
     var tmp0_subject_7_20_24_32_35_46 = this.previousSibling.previousSibling.dataset.id;
     tmp._set_level_(tmp0_subject_7_20_24_32_35_46 == '0' ? 0 : tmp0_subject_7_20_24_32_35_46 == '1' ? 1 : tmp0_subject_7_20_24_32_35_46 == '2' ? 2 : 0);
   };
   _no_name_provided__98.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__98.$metadata$ = {
@@ -21070,13 +21070,13 @@
   function _no_name_provided__101($this) {
     this._$this_8 = $this;
   }
-  _no_name_provided__101.prototype.invoke_306 = function (it) {
+  _no_name_provided__101.prototype.invoke_318 = function (it) {
     var tmp = difficulty_getInstance();
     var tmp0_subject_10_14_37_45_48_59 = this._$this_8._get_attributes__21().get_53('data-id');
     tmp._set_level_(tmp0_subject_10_14_37_45_48_59 === '0' ? 0 : tmp0_subject_10_14_37_45_48_59 === '1' ? 1 : tmp0_subject_10_14_37_45_48_59 === '2' ? 2 : 0);
   };
   _no_name_provided__101.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__101.$metadata$ = {
@@ -21085,13 +21085,13 @@
   };
   function _no_name_provided__102() {
   }
-  _no_name_provided__102.prototype.invoke_306 = function (it) {
+  _no_name_provided__102.prototype.invoke_318 = function (it) {
     var tmp = difficulty_getInstance();
     var tmp0_subject_7_20_43_51_54_65 = this.previousSibling.previousSibling.dataset.id;
     tmp._set_level_(tmp0_subject_7_20_43_51_54_65 == '0' ? 0 : tmp0_subject_7_20_43_51_54_65 == '1' ? 1 : tmp0_subject_7_20_43_51_54_65 == '2' ? 2 : 0);
   };
   _no_name_provided__102.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__102.$metadata$ = {
@@ -21137,13 +21137,13 @@
   function _no_name_provided__105($this) {
     this._$this_9 = $this;
   }
-  _no_name_provided__105.prototype.invoke_306 = function (it) {
+  _no_name_provided__105.prototype.invoke_318 = function (it) {
     var tmp = difficulty_getInstance();
     var tmp0_subject_10_14_56_64_67_78 = this._$this_9._get_attributes__21().get_53('data-id');
     tmp._set_level_(tmp0_subject_10_14_56_64_67_78 === '0' ? 0 : tmp0_subject_10_14_56_64_67_78 === '1' ? 1 : tmp0_subject_10_14_56_64_67_78 === '2' ? 2 : 0);
   };
   _no_name_provided__105.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__105.$metadata$ = {
@@ -21152,13 +21152,13 @@
   };
   function _no_name_provided__106() {
   }
-  _no_name_provided__106.prototype.invoke_306 = function (it) {
+  _no_name_provided__106.prototype.invoke_318 = function (it) {
     var tmp = difficulty_getInstance();
     var tmp0_subject_7_20_62_70_73_84 = this.previousSibling.previousSibling.dataset.id;
     tmp._set_level_(tmp0_subject_7_20_62_70_73_84 == '0' ? 0 : tmp0_subject_7_20_62_70_73_84 == '1' ? 1 : tmp0_subject_7_20_62_70_73_84 == '2' ? 2 : 0);
   };
   _no_name_provided__106.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__106.$metadata$ = {
@@ -21302,13 +21302,13 @@
   function _no_name_provided__114($this) {
     this._$this_10 = $this;
   }
-  _no_name_provided__114.prototype.invoke_306 = function (it) {
+  _no_name_provided__114.prototype.invoke_318 = function (it) {
     var tmp = rumble_getInstance();
     var tmp0_subject_10_14_18_26_98_109 = this._$this_10._get_attributes__21().get_53('data-id');
     tmp._set_state__1(tmp0_subject_10_14_18_26_98_109 === '0' ? true : tmp0_subject_10_14_18_26_98_109 === '1' ? false : true);
   };
   _no_name_provided__114.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__114.$metadata$ = {
@@ -21317,13 +21317,13 @@
   };
   function _no_name_provided__115() {
   }
-  _no_name_provided__115.prototype.invoke_306 = function (it) {
+  _no_name_provided__115.prototype.invoke_318 = function (it) {
     var tmp = rumble_getInstance();
     var tmp0_subject_7_20_24_32_104_115 = this.previousSibling.previousSibling.dataset.id;
     tmp._set_state__1(tmp0_subject_7_20_24_32_104_115 == '0' ? true : tmp0_subject_7_20_24_32_104_115 == '1' ? false : true);
   };
   _no_name_provided__115.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__115.$metadata$ = {
@@ -21369,13 +21369,13 @@
   function _no_name_provided__118($this) {
     this._$this_11 = $this;
   }
-  _no_name_provided__118.prototype.invoke_306 = function (it) {
+  _no_name_provided__118.prototype.invoke_318 = function (it) {
     var tmp = rumble_getInstance();
     var tmp0_subject_10_14_37_45_117_128 = this._$this_11._get_attributes__21().get_53('data-id');
     tmp._set_state__1(tmp0_subject_10_14_37_45_117_128 === '0' ? true : tmp0_subject_10_14_37_45_117_128 === '1' ? false : true);
   };
   _no_name_provided__118.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__118.$metadata$ = {
@@ -21384,13 +21384,13 @@
   };
   function _no_name_provided__119() {
   }
-  _no_name_provided__119.prototype.invoke_306 = function (it) {
+  _no_name_provided__119.prototype.invoke_318 = function (it) {
     var tmp = rumble_getInstance();
     var tmp0_subject_7_20_43_51_123_134 = this.previousSibling.previousSibling.dataset.id;
     tmp._set_state__1(tmp0_subject_7_20_43_51_123_134 == '0' ? true : tmp0_subject_7_20_43_51_123_134 == '1' ? false : true);
   };
   _no_name_provided__119.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__119.$metadata$ = {
@@ -21635,7 +21635,7 @@
   function _no_name_provided_$factory_68() {
     var i = new _no_name_provided__95();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -21705,14 +21705,14 @@
   function _no_name_provided_$factory_78($this) {
     var i = new _no_name_provided__97($this);
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_79() {
     var i = new _no_name_provided__98();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -21733,14 +21733,14 @@
   function _no_name_provided_$factory_82($this) {
     var i = new _no_name_provided__101($this);
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_83() {
     var i = new _no_name_provided__102();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -21761,14 +21761,14 @@
   function _no_name_provided_$factory_86($this) {
     var i = new _no_name_provided__105($this);
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_87() {
     var i = new _no_name_provided__106();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -21817,14 +21817,14 @@
   function _no_name_provided_$factory_94($this) {
     var i = new _no_name_provided__114($this);
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_95() {
     var i = new _no_name_provided__115();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -21845,14 +21845,14 @@
   function _no_name_provided_$factory_98($this) {
     var i = new _no_name_provided__118($this);
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_99() {
     var i = new _no_name_provided__119();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -22081,7 +22081,7 @@
   }
   function _no_name_provided__138() {
   }
-  _no_name_provided__138.prototype.invoke_306 = function (it) {
+  _no_name_provided__138.prototype.invoke_318 = function (it) {
     if (isMobile()) {
       var tmp0_safe_receiver_10_17_23 = document.querySelector('#pregame-playerList');
       var tmp1_safe_receiver_9_16_22 = tmp0_safe_receiver_10_17_23 == null ? null : tmp0_safe_receiver_10_17_23.classList;
@@ -22121,7 +22121,7 @@
       Unit_getInstance();
     }};
   _no_name_provided__138.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__138.$metadata$ = {
@@ -22130,11 +22130,11 @@
   };
   function _no_name_provided__139() {
   }
-  _no_name_provided__139.prototype.invoke_306 = function (it) {
+  _no_name_provided__139.prototype.invoke_318 = function (it) {
     inpFocusOut();
   };
   _no_name_provided__139.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__139.$metadata$ = {
@@ -22143,7 +22143,7 @@
   };
   function _no_name_provided__140() {
   }
-  _no_name_provided__140.prototype.invoke_306 = function (it) {
+  _no_name_provided__140.prototype.invoke_318 = function (it) {
     if (it instanceof KeyboardEvent)
       it;
     else
@@ -22154,7 +22154,7 @@
       tmp0_asDynamic_0_17_24_30.click();
     }};
   _no_name_provided__140.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__140.$metadata$ = {
@@ -22163,7 +22163,7 @@
   };
   function _no_name_provided__141() {
   }
-  _no_name_provided__141.prototype.invoke_306 = function (it) {
+  _no_name_provided__141.prototype.invoke_318 = function (it) {
     var tmp = rumbler_getInstance();
     tmp.rumble$default(0.0, 1, null);
     var tmp0_asDynamic_0_14_41_47 = document.querySelector('#pregame-playernameInp');
@@ -22189,7 +22189,7 @@
     Unit_getInstance();
   };
   _no_name_provided__141.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__141.$metadata$ = {
@@ -22198,11 +22198,11 @@
   };
   function _no_name_provided__142() {
   }
-  _no_name_provided__142.prototype.invoke_302 = function () {
+  _no_name_provided__142.prototype.invoke_314 = function () {
     availableCards_getInstance().putCard();
   };
   _no_name_provided__142.prototype.invoke_73 = function () {
-    this.invoke_302();
+    this.invoke_314();
     return Unit_getInstance();
   };
   _no_name_provided__142.$metadata$ = {
@@ -22211,14 +22211,14 @@
   };
   function _no_name_provided__143() {
   }
-  _no_name_provided__143.prototype.invoke_306 = function (it) {
+  _no_name_provided__143.prototype.invoke_318 = function (it) {
     var tmp = rumbler_getInstance();
     tmp.rumble$default(0.0, 1, null);
     var tmp_0 = play();
     changePage(tmp_0, _no_name_provided_$factory_120());
   };
   _no_name_provided__143.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__143.$metadata$ = {
@@ -22445,28 +22445,28 @@
   function _no_name_provided_$factory_114() {
     var i = new _no_name_provided__138();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_115() {
     var i = new _no_name_provided__139();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_116() {
     var i = new _no_name_provided__140();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_117() {
     var i = new _no_name_provided__141();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -22480,14 +22480,14 @@
   function _no_name_provided_$factory_119() {
     var i = new _no_name_provided__143();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_120() {
     var i = new _no_name_provided__142();
     return function () {
-      i.invoke_302();
+      i.invoke_314();
       return Unit_getInstance();
     };
   }
@@ -22502,11 +22502,11 @@
   }
   function _no_name_provided__152() {
   }
-  _no_name_provided__152.prototype.invoke_302 = function () {
+  _no_name_provided__152.prototype.invoke_314 = function () {
     playerList_getInstance().update_0();
   };
   _no_name_provided__152.prototype.invoke_73 = function () {
-    this.invoke_302();
+    this.invoke_314();
     return Unit_getInstance();
   };
   _no_name_provided__152.$metadata$ = {
@@ -22515,12 +22515,12 @@
   };
   function _no_name_provided__153() {
   }
-  _no_name_provided__153.prototype.invoke_306 = function (_anonymous_parameter_0_) {
+  _no_name_provided__153.prototype.invoke_318 = function (_anonymous_parameter_0_) {
     var tmp = pregame();
     changePage(tmp, _no_name_provided_$factory_128());
   };
   _no_name_provided__153.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__153.$metadata$ = {
@@ -22529,35 +22529,11 @@
   };
   function _no_name_provided__154() {
   }
-  _no_name_provided__154.prototype.invoke_302 = function () {
-    var wrapper_12_34_40 = document.querySelectorAll('.options-wrapperInside');
-    options_getInstance().updateAllViews();
-    if (isMobile()) {
-      var tmp0_repeat_0_13_35_41 = wrapper_12_34_40.length;
-      var inductionVariable = 0;
-      if (inductionVariable < tmp0_repeat_0_13_35_41)
-        do {
-          var index_2_15_37_43 = inductionVariable;
-          inductionVariable = inductionVariable + 1 | 0;
-          var tmp0_asDynamic_0_4_16_38_44 = wrapper_12_34_40[index_2_15_37_43];
-          tmp0_asDynamic_0_4_16_38_44.style.flexDirection = 'column';
-        }
-         while (inductionVariable < tmp0_repeat_0_13_35_41);
-    } else {
-      var tmp1_repeat_0_17_39_45 = wrapper_12_34_40.length;
-      var inductionVariable_0 = 0;
-      if (inductionVariable_0 < tmp1_repeat_0_17_39_45)
-        do {
-          var index_2_19_41_47 = inductionVariable_0;
-          inductionVariable_0 = inductionVariable_0 + 1 | 0;
-          var tmp0_asDynamic_0_4_20_42_48 = wrapper_12_34_40[index_2_19_41_47];
-          tmp0_asDynamic_0_4_20_42_48.style.flexDirection = 'row';
-        }
-         while (inductionVariable_0 < tmp1_repeat_0_17_39_45);
-    }
+  _no_name_provided__154.prototype.invoke_314 = function () {
+    optionsDoAfter();
   };
   _no_name_provided__154.prototype.invoke_73 = function () {
-    this.invoke_302();
+    this.invoke_314();
     return Unit_getInstance();
   };
   _no_name_provided__154.$metadata$ = {
@@ -22566,12 +22542,12 @@
   };
   function _no_name_provided__155() {
   }
-  _no_name_provided__155.prototype.invoke_306 = function (_anonymous_parameter_0_) {
+  _no_name_provided__155.prototype.invoke_318 = function (_anonymous_parameter_0_) {
     var tmp = options();
     changePage(tmp, _no_name_provided_$factory_130());
   };
   _no_name_provided__155.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__155.$metadata$ = {
@@ -22618,11 +22594,11 @@
   };
   function _no_name_provided__158() {
   }
-  _no_name_provided__158.prototype.invoke_306 = function (_anonymous_parameter_0_) {
+  _no_name_provided__158.prototype.invoke_318 = function (_anonymous_parameter_0_) {
     shareRoutine();
   };
   _no_name_provided__158.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__158.$metadata$ = {
@@ -22633,10 +22609,10 @@
   }
   _no_name_provided__159.prototype.invoke_108 = function (_this__0) {
     _set_id_(_this__0, 'shareBtn');
-    var tmp0_receiver_8_16_63 = _this__0;
-    _set_classes_(tmp0_receiver_8_16_63, plus(_get_classes_(tmp0_receiver_8_16_63), 'startMenu-btn'));
-    var tmp1_receiver_9_17_64 = _this__0;
-    _set_classes_(tmp1_receiver_9_17_64, plus(_get_classes_(tmp1_receiver_9_17_64), 'btn'));
+    var tmp0_receiver_8_16_54 = _this__0;
+    _set_classes_(tmp0_receiver_8_16_54, plus(_get_classes_(tmp0_receiver_8_16_54), 'startMenu-btn'));
+    var tmp1_receiver_9_17_55 = _this__0;
+    _set_classes_(tmp1_receiver_9_17_55, plus(_get_classes_(tmp1_receiver_9_17_55), 'btn'));
     _set_onClickFunction_(_this__0, _no_name_provided_$factory_132());
     _this__0.unaryPlus_54('Teilen');
   };
@@ -22703,20 +22679,20 @@
   function _no_name_provided__162() {
   }
   _no_name_provided__162.prototype.invoke_113 = function (_this__0) {
-    var tmp0_receiver_5_52 = _this__0;
-    _set_classes_(tmp0_receiver_5_52, plus(_get_classes_(tmp0_receiver_5_52), 'startMenu-btns'));
-    var tmp0_button_0_6_53 = null;
-    var tmp1_button_0_7_54 = null;
-    var tmp2_button_0_8_55 = null;
-    var tmp3_button_0_9_56 = null;
-    var tmp4_button_0_10_57 = null;
-    var tmp0_safe_receiver_3_12_59 = tmp0_button_0_6_53;
-    var tmp = tmp0_safe_receiver_3_12_59 == null ? null : enumEncode(tmp0_safe_receiver_3_12_59);
-    var tmp1_safe_receiver_4_13_60 = tmp1_button_0_7_54;
-    var tmp_0 = tmp1_safe_receiver_4_13_60 == null ? null : enumEncode(tmp1_safe_receiver_4_13_60);
-    var tmp2_safe_receiver_5_14_61 = tmp3_button_0_9_56;
-    var tmp0_visit_0_2_11_58 = new BUTTON(attributesMapOf_0(['formenctype', tmp, 'formmethod', tmp_0, 'name', tmp2_button_0_8_55, 'type', tmp2_safe_receiver_5_14_61 == null ? null : enumEncode(tmp2_safe_receiver_5_14_61), 'class', tmp4_button_0_10_57]), _this__0._get_consumer__21());
-    visitTag(tmp0_visit_0_2_11_58, _no_name_provided_$factory_131());
+    var tmp0_receiver_5_43 = _this__0;
+    _set_classes_(tmp0_receiver_5_43, plus(_get_classes_(tmp0_receiver_5_43), 'startMenu-btns'));
+    var tmp0_button_0_6_44 = null;
+    var tmp1_button_0_7_45 = null;
+    var tmp2_button_0_8_46 = null;
+    var tmp3_button_0_9_47 = null;
+    var tmp4_button_0_10_48 = null;
+    var tmp0_safe_receiver_3_12_50 = tmp0_button_0_6_44;
+    var tmp = tmp0_safe_receiver_3_12_50 == null ? null : enumEncode(tmp0_safe_receiver_3_12_50);
+    var tmp1_safe_receiver_4_13_51 = tmp1_button_0_7_45;
+    var tmp_0 = tmp1_safe_receiver_4_13_51 == null ? null : enumEncode(tmp1_safe_receiver_4_13_51);
+    var tmp2_safe_receiver_5_14_52 = tmp3_button_0_9_47;
+    var tmp0_visit_0_2_11_49 = new BUTTON(attributesMapOf_0(['formenctype', tmp, 'formmethod', tmp_0, 'name', tmp2_button_0_8_46, 'type', tmp2_safe_receiver_5_14_52 == null ? null : enumEncode(tmp2_safe_receiver_5_14_52), 'class', tmp4_button_0_10_48]), _this__0._get_consumer__21());
+    visitTag(tmp0_visit_0_2_11_49, _no_name_provided_$factory_131());
   };
   _no_name_provided__162.prototype.invoke_81 = function (p1) {
     this.invoke_113(p1 instanceof DIV ? p1 : THROW_CCE());
@@ -22736,9 +22712,9 @@
     var tmp1_div_0_8 = null;
     var tmp0_visit_0_2_9 = new DIV(attributesMapOf('class', tmp1_div_0_8), _this__0._get_consumer__21());
     visitTag(tmp0_visit_0_2_9, _no_name_provided_$factory_123());
-    var tmp2_div_0_49 = null;
-    var tmp0_visit_0_2_50 = new DIV(attributesMapOf('class', tmp2_div_0_49), _this__0._get_consumer__21());
-    visitTag(tmp0_visit_0_2_50, _no_name_provided_$factory_124());
+    var tmp2_div_0_40 = null;
+    var tmp0_visit_0_2_41 = new DIV(attributesMapOf('class', tmp2_div_0_40), _this__0._get_consumer__21());
+    visitTag(tmp0_visit_0_2_41, _no_name_provided_$factory_124());
   };
   _no_name_provided__163.prototype.invoke_81 = function (p1) {
     this.invoke_113(p1 instanceof DIV ? p1 : THROW_CCE());
@@ -22793,28 +22769,28 @@
   function _no_name_provided_$factory_127() {
     var i = new _no_name_provided__153();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_128() {
     var i = new _no_name_provided__152();
     return function () {
-      i.invoke_302();
+      i.invoke_314();
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_129() {
     var i = new _no_name_provided__155();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_130() {
     var i = new _no_name_provided__154();
     return function () {
-      i.invoke_302();
+      i.invoke_314();
       return Unit_getInstance();
     };
   }
@@ -22828,55 +22804,19 @@
   function _no_name_provided_$factory_132() {
     var i = new _no_name_provided__158();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
+  function _get_urlsToCache_() {
+    return urlsToCache;
+  }
+  var urlsToCache;
   function main() {
     var tmp = window;
     tmp.onload = _no_name_provided_$factory_133();
   }
-  function changePage(compo, doAfter) {
-    (function () {
-      var $externalVarargReceiverTmp = ensureNotNull(document.getElementById('root'));
-      return $externalVarargReceiverTmp.replaceWith.apply($externalVarargReceiverTmp, [].concat([compo]));
-    }.call(this));
-    doAfter();
-  }
-  function changePage$default(compo, doAfter, $mask0, $handler) {
-    if (!(($mask0 & 2) === 0)) {
-      doAfter = _no_name_provided_$factory_134();
-    }return changePage(compo, doAfter);
-  }
-  function _no_name_provided__164() {
-  }
-  _no_name_provided__164.prototype.invoke_302 = function () {
-    playerList_getInstance().update_0();
-  };
-  _no_name_provided__164.prototype.invoke_73 = function () {
-    this.invoke_302();
-    return Unit_getInstance();
-  };
-  _no_name_provided__164.$metadata$ = {
-    kind: 'class',
-    interfaces: []
-  };
-  function _no_name_provided__165() {
-  }
-  _no_name_provided__165.prototype.invoke_302 = function () {
-    availableCards_getInstance().putCard();
-  };
-  _no_name_provided__165.prototype.invoke_73 = function () {
-    this.invoke_302();
-    return Unit_getInstance();
-  };
-  _no_name_provided__165.$metadata$ = {
-    kind: 'class',
-    interfaces: []
-  };
-  function _no_name_provided__166() {
-  }
-  _no_name_provided__166.prototype.invoke_302 = function () {
+  function optionsDoAfter() {
     var wrapper = document.querySelectorAll('.options-wrapperInside');
     options_getInstance().updateAllViews();
     if (isMobile()) {
@@ -22902,9 +22842,75 @@
         }
          while (inductionVariable_0 < tmp1_repeat_0);
     }
+  }
+  function changePage(compo, doAfter) {
+    (function () {
+      var $externalVarargReceiverTmp = ensureNotNull(document.getElementById('root'));
+      return $externalVarargReceiverTmp.replaceWith.apply($externalVarargReceiverTmp, [].concat([compo]));
+    }.call(this));
+    doAfter();
+  }
+  function changePage$default(compo, doAfter, $mask0, $handler) {
+    if (!(($mask0 & 2) === 0)) {
+      doAfter = _no_name_provided_$factory_134();
+    }return changePage(compo, doAfter);
+  }
+  function _get_CACHE_NAME_() {
+    return CACHE_NAME;
+  }
+  var CACHE_NAME;
+  function serviceWorker() {
+    try {
+      var tmp = window;
+      tmp.addEventListener('load', _no_name_provided_$factory_135());
+    } catch ($p) {
+      if ($p instanceof Error) {
+        var tmp_0 = self;
+        tmp_0.addEventListener('install', _no_name_provided_$factory_136());
+        var tmp_1 = self;
+        tmp_1.addEventListener('fetch', _no_name_provided_$factory_137());
+        var tmp_2 = self;
+        tmp_2.addEventListener('activate', _no_name_provided_$factory_138());
+      } else {
+        {
+          throw $p;
+        }
+      }
+    }
+  }
+  function _no_name_provided__164() {
+  }
+  _no_name_provided__164.prototype.invoke_314 = function () {
+    playerList_getInstance().update_0();
+  };
+  _no_name_provided__164.prototype.invoke_73 = function () {
+    this.invoke_314();
+    return Unit_getInstance();
+  };
+  _no_name_provided__164.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__165() {
+  }
+  _no_name_provided__165.prototype.invoke_314 = function () {
+    availableCards_getInstance().putCard();
+  };
+  _no_name_provided__165.prototype.invoke_73 = function () {
+    this.invoke_314();
+    return Unit_getInstance();
+  };
+  _no_name_provided__165.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__166() {
+  }
+  _no_name_provided__166.prototype.invoke_314 = function () {
+    optionsDoAfter();
   };
   _no_name_provided__166.prototype.invoke_73 = function () {
-    this.invoke_302();
+    this.invoke_314();
     return Unit_getInstance();
   };
   _no_name_provided__166.$metadata$ = {
@@ -22913,7 +22919,9 @@
   };
   function _no_name_provided__167() {
   }
-  _no_name_provided__167.prototype.invoke_306 = function (it) {
+  _no_name_provided__167.prototype.invoke_318 = function (it) {
+    ensureNotNull(document.querySelector('#version')).textContent = 'v1.0.0';
+    serviceWorker();
     var tmp0_subject = window.location.hash;
     switch (tmp0_subject) {
       case '#startemenu':
@@ -22922,15 +22930,15 @@
         break;
       case '#pregame':
         var tmp_0 = pregame();
-        changePage(tmp_0, _no_name_provided_$factory_135());
+        changePage(tmp_0, _no_name_provided_$factory_139());
         break;
       case '#play':
         var tmp_1 = play();
-        changePage(tmp_1, _no_name_provided_$factory_136());
+        changePage(tmp_1, _no_name_provided_$factory_140());
         break;
       case '#options':
         var tmp_2 = options();
-        changePage(tmp_2, _no_name_provided_$factory_137());
+        changePage(tmp_2, _no_name_provided_$factory_141());
         break;
       default:var tmp_3 = startmenu();
         changePage$default(tmp_3, null, 2, null);
@@ -22938,7 +22946,7 @@
     }
   };
   _no_name_provided__167.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
   _no_name_provided__167.$metadata$ = {
@@ -22947,51 +22955,196 @@
   };
   function _no_name_provided__168() {
   }
-  _no_name_provided__168.prototype.invoke_302 = function () {
+  _no_name_provided__168.prototype.invoke_314 = function () {
     return Unit_getInstance();
   };
   _no_name_provided__168.prototype.invoke_73 = function () {
-    this.invoke_302();
+    this.invoke_314();
     return Unit_getInstance();
   };
   _no_name_provided__168.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
+  function _no_name_provided__169() {
+  }
+  _no_name_provided__169.prototype.invoke_318 = function (it) {
+    window.navigator.serviceWorker.register('/kotlin-js-pwa.js');
+    Unit_getInstance();
+  };
+  _no_name_provided__169.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
+    return Unit_getInstance();
+  };
+  _no_name_provided__169.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__170() {
+  }
+  _no_name_provided__170.prototype.invoke_282 = function (it) {
+    return it.addAll(urlsToCache);
+  };
+  _no_name_provided__170.prototype.invoke_81 = function (p1) {
+    return this.invoke_282(p1 instanceof Cache ? p1 : THROW_CCE());
+  };
+  _no_name_provided__170.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__171() {
+  }
+  _no_name_provided__171.prototype.invoke_318 = function (ev) {
+    if (ev instanceof InstallEvent)
+      ev;
+    else
+      THROW_CCE();
+    Unit_getInstance();
+    var tmp = ev;
+    var tmp_0 = self.caches.open('v1.0.0');
+    tmp.waitUntil(tmp_0.then(_no_name_provided_$factory_142()));
+  };
+  _no_name_provided__171.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
+    return Unit_getInstance();
+  };
+  _no_name_provided__171.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__172($ev) {
+    this._$ev = $ev;
+  }
+  _no_name_provided__172.prototype.invoke_80 = function (it) {
+    if (it == null ? true : it instanceof Response)
+      it;
+    else
+      THROW_CCE();
+    Unit_getInstance();
+    var tmp0_elvis_lhs = it;
+    return tmp0_elvis_lhs == null ? self.fetch(this._$ev.request) : tmp0_elvis_lhs;
+  };
+  _no_name_provided__172.prototype.invoke_81 = function (p1) {
+    return this.invoke_80((p1 == null ? true : isObject(p1)) ? p1 : THROW_CCE());
+  };
+  _no_name_provided__172.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__173() {
+  }
+  _no_name_provided__173.prototype.invoke_318 = function (ev) {
+    if (ev instanceof FetchEvent)
+      ev;
+    else
+      THROW_CCE();
+    Unit_getInstance();
+    var tmp = self.caches.match(ev.request);
+    tmp.then(_no_name_provided_$factory_143(ev));
+    Unit_getInstance();
+  };
+  _no_name_provided__173.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
+    return Unit_getInstance();
+  };
+  _no_name_provided__173.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
+  function _no_name_provided__174() {
+  }
+  _no_name_provided__174.prototype.invoke_318 = function (it) {
+    (function () {
+      var $externalVarargReceiverTmp = console;
+      return $externalVarargReceiverTmp.log.apply($externalVarargReceiverTmp, [].concat(['Service Worker is now active!']));
+    }.call(this));
+  };
+  _no_name_provided__174.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
+    return Unit_getInstance();
+  };
+  _no_name_provided__174.$metadata$ = {
+    kind: 'class',
+    interfaces: []
+  };
   function _no_name_provided_$factory_133() {
     var i = new _no_name_provided__167();
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_134() {
     var i = new _no_name_provided__168();
     return function () {
-      i.invoke_302();
+      i.invoke_314();
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_135() {
-    var i = new _no_name_provided__164();
-    return function () {
-      i.invoke_302();
+    var i = new _no_name_provided__169();
+    return function (p1) {
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_136() {
-    var i = new _no_name_provided__165();
-    return function () {
-      i.invoke_302();
+    var i = new _no_name_provided__171();
+    return function (p1) {
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_137() {
-    var i = new _no_name_provided__166();
-    return function () {
-      i.invoke_302();
+    var i = new _no_name_provided__173();
+    return function (p1) {
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
+  }
+  function _no_name_provided_$factory_138() {
+    var i = new _no_name_provided__174();
+    return function (p1) {
+      i.invoke_318(p1);
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided_$factory_139() {
+    var i = new _no_name_provided__164();
+    return function () {
+      i.invoke_314();
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided_$factory_140() {
+    var i = new _no_name_provided__165();
+    return function () {
+      i.invoke_314();
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided_$factory_141() {
+    var i = new _no_name_provided__166();
+    return function () {
+      i.invoke_314();
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided_$factory_142() {
+    var i = new _no_name_provided__170();
+    return function (p1) {
+      return i.invoke_282(p1);
+    };
+  }
+  function _no_name_provided_$factory_143($ev) {
+    var i = new _no_name_provided__172($ev);
+    return function (p1) {
+      return i.invoke_80(p1);
+    };
+  }
+  function urlsToCache$init$() {
+    var tmp0_arrayOf_0 = ['/', '/drinkingGameKt.js', '/index.html', '/manifest.webmanifest', '/style.css', '/assets/bottle.svg', '/assets/cards.js', '/assets/down_arrow.js', '/assets/down_arrow.js', '/assets/favicon.ico', '/assets/icon.png', '/assets/icon.webp', '/assets/icon-ios.png', '/assets/maskable_icon.png', '/assets/SF-UI-Text-Regular.otf'];
+    return tmp0_arrayOf_0;
   }
   function difficulty() {
     difficulty_instance = this;
@@ -23300,106 +23453,106 @@
       }
     }
   }
-  function _no_name_provided__169($cardDyn) {
+  function _no_name_provided__175($cardDyn) {
     this._$cardDyn = $cardDyn;
   }
-  _no_name_provided__169.prototype.invoke_302 = function () {
+  _no_name_provided__175.prototype.invoke_314 = function () {
     interactions_getInstance()._isMoving = false;
     this._$cardDyn.style.transition = '' + 'all ' + constants_getInstance()._turnTime + 'ms';
   };
-  _no_name_provided__169.prototype.invoke_73 = function () {
-    this.invoke_302();
+  _no_name_provided__175.prototype.invoke_73 = function () {
+    this.invoke_314();
     return Unit_getInstance();
   };
-  _no_name_provided__169.$metadata$ = {
+  _no_name_provided__175.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__170($cardDyn) {
+  function _no_name_provided__176($cardDyn) {
     this._$cardDyn_0 = $cardDyn;
   }
-  _no_name_provided__170.prototype.invoke_73 = function () {
+  _no_name_provided__176.prototype.invoke_73 = function () {
     this._$cardDyn_0.style.transition = '' + 'all ' + constants_getInstance()._animTimeBounce + 'ms';
     this._$cardDyn_0.style.transform = getMatrix(interactions_getInstance(), 0.0, 0.0, interactions_getInstance()._offsetY);
     var tmp = window;
     return function () {
       var $externalVarargReceiverTmp = tmp;
-      return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_145(this._$cardDyn_0), constants_getInstance()._animTimeBounce]);
+      return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_151(this._$cardDyn_0), constants_getInstance()._animTimeBounce]);
     }.call(this);
   };
-  _no_name_provided__170.$metadata$ = {
+  _no_name_provided__176.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__171() {
+  function _no_name_provided__177() {
   }
-  _no_name_provided__171.prototype.invoke_302 = function () {
+  _no_name_provided__177.prototype.invoke_314 = function () {
     availableCards_getInstance().putCard();
     rumbler_getInstance().rumble(1.3);
     interactions_getInstance()._isMoving = false;
   };
-  _no_name_provided__171.prototype.invoke_73 = function () {
-    this.invoke_302();
+  _no_name_provided__177.prototype.invoke_73 = function () {
+    this.invoke_314();
     return Unit_getInstance();
   };
-  _no_name_provided__171.$metadata$ = {
+  _no_name_provided__177.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__172() {
+  function _no_name_provided__178() {
   }
-  _no_name_provided__172.prototype.invoke_302 = function () {
+  _no_name_provided__178.prototype.invoke_314 = function () {
     var tmp = startmenu();
     changePage$default(tmp, null, 2, null);
     var tmp_0 = rumbler_getInstance();
     tmp_0.rumble$default(0.0, 1, null);
   };
-  _no_name_provided__172.prototype.invoke_73 = function () {
-    this.invoke_302();
+  _no_name_provided__178.prototype.invoke_73 = function () {
+    this.invoke_314();
     return Unit_getInstance();
   };
-  _no_name_provided__172.$metadata$ = {
+  _no_name_provided__178.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__173() {
+  function _no_name_provided__179() {
   }
-  _no_name_provided__173.prototype.invoke_302 = function () {
+  _no_name_provided__179.prototype.invoke_314 = function () {
     interactions_getInstance()._shouldRotate = true;
   };
-  _no_name_provided__173.prototype.invoke_73 = function () {
-    this.invoke_302();
+  _no_name_provided__179.prototype.invoke_73 = function () {
+    this.invoke_314();
     return Unit_getInstance();
   };
-  _no_name_provided__173.$metadata$ = {
+  _no_name_provided__179.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__174() {
+  function _no_name_provided__180() {
   }
-  _no_name_provided__174.prototype.invoke_302 = function () {
+  _no_name_provided__180.prototype.invoke_314 = function () {
     availableCards_getInstance().putCard();
     interactions_getInstance()._isMoving = false;
   };
-  _no_name_provided__174.prototype.invoke_73 = function () {
-    this.invoke_302();
+  _no_name_provided__180.prototype.invoke_73 = function () {
+    this.invoke_314();
     return Unit_getInstance();
   };
-  _no_name_provided__174.$metadata$ = {
+  _no_name_provided__180.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__175() {
+  function _no_name_provided__181() {
   }
-  _no_name_provided__175.prototype.invoke_302 = function () {
+  _no_name_provided__181.prototype.invoke_314 = function () {
     var tmp = startmenu();
     changePage$default(tmp, null, 2, null);
   };
-  _no_name_provided__175.prototype.invoke_73 = function () {
-    this.invoke_302();
+  _no_name_provided__181.prototype.invoke_73 = function () {
+    this.invoke_314();
     return Unit_getInstance();
   };
-  _no_name_provided__175.$metadata$ = {
+  _no_name_provided__181.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
@@ -23447,9 +23600,9 @@
     var tmp_1 = Math.sin(tmp0_sin_0);
     return '' + 'matrix(' + tmp + ', ' + tmp_0 + ', ' + tmp_1 + ', ' + Math.cos(angle) + ', ' + tx + ', ' + ty + ')';
   }
-  function _no_name_provided__176() {
+  function _no_name_provided__182() {
   }
-  _no_name_provided__176.prototype.invoke_306 = function (it) {
+  _no_name_provided__182.prototype.invoke_318 = function (it) {
     var tmp0_asDynamic_0 = it.target;
     tmp0_asDynamic_0.style.transition = '' + 'all ' + constants_getInstance()._turnTime + 'ms';
     interactions_getInstance()._dX = 0.0;
@@ -23462,17 +23615,17 @@
       var tmp_2 = it.touches[0].clientY;
       tmp_1._oriY = (!(tmp_2 == null) ? typeof tmp_2 === 'number' : false) ? tmp_2 : THROW_CCE();
     }};
-  _no_name_provided__176.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+  _no_name_provided__182.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__176.$metadata$ = {
+  _no_name_provided__182.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__177() {
+  function _no_name_provided__183() {
   }
-  _no_name_provided__177.prototype.invoke_306 = function (it) {
+  _no_name_provided__183.prototype.invoke_318 = function (it) {
     var tmp0_asDynamic_0 = document.querySelector('#card');
     var cardDyn = tmp0_asDynamic_0;
     var tmp1_asDynamic_0 = document.querySelector('#play-name');
@@ -23490,7 +23643,7 @@
       var tmp_1 = window;
       (function () {
         var $externalVarargReceiverTmp = tmp_1;
-        return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_142(cardDyn), constants_getInstance()._animTimeRet]);
+        return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_148(cardDyn), constants_getInstance()._animTimeRet]);
       }.call(this));
       Unit_getInstance();
     } else {
@@ -23511,37 +23664,37 @@
         var tmp_5 = window;
         (function () {
           var $externalVarargReceiverTmp = tmp_5;
-          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_143(), roundToInt(constants_getInstance()._animTimeOut * 1.5)]);
+          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_149(), roundToInt(constants_getInstance()._animTimeOut * 1.5)]);
         }.call(this));
         Unit_getInstance();
       } else {
         var tmp_6 = window;
         (function () {
           var $externalVarargReceiverTmp = tmp_6;
-          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_144(), imul(constants_getInstance()._animTimeOut, 2)]);
+          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_150(), imul(constants_getInstance()._animTimeOut, 2)]);
         }.call(this));
         Unit_getInstance();
       }
     }
   };
-  _no_name_provided__177.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+  _no_name_provided__183.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__177.$metadata$ = {
+  _no_name_provided__183.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__178() {
+  function _no_name_provided__184() {
   }
-  _no_name_provided__178.prototype.invoke_306 = function (it) {
+  _no_name_provided__184.prototype.invoke_318 = function (it) {
     if (!interactions_getInstance()._isMoving) {
       if (interactions_getInstance()._shouldRotate) {
         interactions_getInstance()._shouldRotate = false;
         var tmp = window;
         (function () {
           var $externalVarargReceiverTmp = tmp;
-          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_146(), interactions_getInstance()._rotateTimeout]);
+          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_152(), interactions_getInstance()._rotateTimeout]);
         }.call(this));
         Unit_getInstance();
         var tmp_0 = interactions_getInstance();
@@ -23565,17 +23718,17 @@
         var tmp2_asDynamic_0 = it.target;
         tmp2_asDynamic_0.style.transform = getMatrix(interactions_getInstance(), interactions_getInstance()._angle, interactions_getInstance()._dX + interactions_getInstance()._offsetX, interactions_getInstance()._dY + interactions_getInstance()._offsetY);
       }}};
-  _no_name_provided__178.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+  _no_name_provided__184.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__178.$metadata$ = {
+  _no_name_provided__184.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__179() {
+  function _no_name_provided__185() {
   }
-  _no_name_provided__179.prototype.invoke_299 = function (it) {
+  _no_name_provided__185.prototype.invoke_311 = function (it) {
     if (((it.code === 'ArrowRight' ? true : it.code === 'ArrowLeft') ? true : it.code === 'ArrowDown') ? !interactions_getInstance()._isMoving : false) {
       var tmp0_subject = it.code;
       {
@@ -23612,23 +23765,23 @@
         var tmp_1 = window;
         (function () {
           var $externalVarargReceiverTmp = tmp_1;
-          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_147(), roundToInt(imul(constants_getInstance()._animTimeOut, 2) * 1.2)]);
+          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_153(), roundToInt(imul(constants_getInstance()._animTimeOut, 2) * 1.2)]);
         }.call(this));
         Unit_getInstance();
       } else {
         var tmp_2 = window;
         (function () {
           var $externalVarargReceiverTmp = tmp_2;
-          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_148(), imul(constants_getInstance()._animTimeOut, 4)]);
+          return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_154(), imul(constants_getInstance()._animTimeOut, 4)]);
         }.call(this));
         Unit_getInstance();
       }
     }};
-  _no_name_provided__179.prototype.invoke_81 = function (p1) {
-    this.invoke_299(p1 instanceof KeyboardEvent ? p1 : THROW_CCE());
+  _no_name_provided__185.prototype.invoke_81 = function (p1) {
+    this.invoke_311(p1 instanceof KeyboardEvent ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__179.$metadata$ = {
+  _no_name_provided__185.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
@@ -23713,11 +23866,11 @@
     return this._lastPoint;
   };
   interactions.prototype.addInteractions = function (_this__0) {
-    _this__0.addEventListener('touchstart', _no_name_provided_$factory_138());
-    _this__0.addEventListener('touchend', _no_name_provided_$factory_139());
-    _this__0.addEventListener('touchmove', _no_name_provided_$factory_140());
+    _this__0.addEventListener('touchstart', _no_name_provided_$factory_144());
+    _this__0.addEventListener('touchend', _no_name_provided_$factory_145());
+    _this__0.addEventListener('touchmove', _no_name_provided_$factory_146());
     var tmp = window;
-    tmp.onkeyup = _no_name_provided_$factory_141();
+    tmp.onkeyup = _no_name_provided_$factory_147();
   };
   interactions.$metadata$ = {
     simpleName: 'interactions',
@@ -23754,12 +23907,12 @@
       new rumbler();
     return rumbler_instance;
   }
-  function _no_name_provided__180() {
+  function _no_name_provided__186() {
   }
-  _no_name_provided__180.prototype.invoke_73 = function () {
+  _no_name_provided__186.prototype.invoke_73 = function () {
     return session_getInstance().get_53('askNextOpportunity');
   };
-  _no_name_provided__180.$metadata$ = {
+  _no_name_provided__186.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
@@ -23781,7 +23934,7 @@
     this._askNextOpportunity = value;
   };
   game.prototype._get_askNextOpportunity_ = function () {
-    var tmp = whenNull(this, _no_name_provided_$factory_149());
+    var tmp = whenNull(this, _no_name_provided_$factory_155());
     return (!(tmp == null) ? typeof tmp === 'boolean' : false) ? tmp : THROW_CCE();
   };
   game.prototype.ask = function () {
@@ -23809,17 +23962,17 @@
       new game();
     return game_instance;
   }
-  function _no_name_provided__181($cardElement) {
+  function _no_name_provided__187($cardElement) {
     this._$cardElement = $cardElement;
   }
-  _no_name_provided__181.prototype.invoke_302 = function () {
+  _no_name_provided__187.prototype.invoke_314 = function () {
     interactions_getInstance().addInteractions(this._$cardElement);
   };
-  _no_name_provided__181.prototype.invoke_73 = function () {
-    this.invoke_302();
+  _no_name_provided__187.prototype.invoke_73 = function () {
+    this.invoke_314();
     return Unit_getInstance();
   };
-  _no_name_provided__181.$metadata$ = {
+  _no_name_provided__187.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
@@ -23832,32 +23985,32 @@
   function _set_cardCounter_($this, _set___) {
     $this._cardCounter = _set___;
   }
-  function _no_name_provided__182() {
+  function _no_name_provided__188() {
   }
-  _no_name_provided__182.prototype.invoke_73 = function () {
+  _no_name_provided__188.prototype.invoke_73 = function () {
     var tmp0_copyOf_0 = cards;
     var tmp1_also_0 = tmp0_copyOf_0.slice();
     shuffle(tmp1_also_0);
     return tmp1_also_0;
   };
-  _no_name_provided__182.$metadata$ = {
+  _no_name_provided__188.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__183($cardDynamic, $cardElement) {
+  function _no_name_provided__189($cardDynamic, $cardElement) {
     this._$cardDynamic = $cardDynamic;
     this._$cardElement_0 = $cardElement;
   }
-  _no_name_provided__183.prototype.invoke_73 = function () {
+  _no_name_provided__189.prototype.invoke_73 = function () {
     this._$cardDynamic.style.transform = '' + 'matrix(1, 0, 0, 1, 0, ' + interactions_getInstance()._offsetY + ')';
     this._$cardDynamic.style.opacity = '1.0';
     var tmp = window;
     return function () {
       var $externalVarargReceiverTmp = tmp;
-      return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_152(this._$cardElement_0), constants_getInstance()._get_animTimeIn_()]);
+      return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_158(this._$cardElement_0), constants_getInstance()._get_animTimeIn_()]);
     }.call(this);
   };
-  _no_name_provided__183.$metadata$ = {
+  _no_name_provided__189.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
@@ -23886,7 +24039,7 @@
       var tmp = this;
       var tmp_0 = session_getInstance().get_53('deck');
       var tmp_1 = (!(tmp_0 == null) ? isArray(tmp_0) : false) ? tmp_0 : null;
-      tmp._deck = whenNull(tmp_1, _no_name_provided_$factory_150());
+      tmp._deck = whenNull(tmp_1, _no_name_provided_$factory_156());
     } else {
     }
     return this._deck;
@@ -23926,7 +24079,7 @@
     var tmp = window;
     (function () {
       var $externalVarargReceiverTmp = tmp;
-      return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_151(cardDynamic, cardElement), 20]);
+      return $externalVarargReceiverTmp.setTimeout.apply($externalVarargReceiverTmp, [_no_name_provided_$factory_157(cardDynamic, cardElement), 20]);
     }.call(this));
     Unit_getInstance();
   };
@@ -23941,54 +24094,54 @@
       new availableCards();
     return availableCards_instance;
   }
-  function _no_name_provided__184($each_4) {
+  function _no_name_provided__190($each_4) {
     this._$each_4 = $each_4;
   }
-  _no_name_provided__184.prototype.invoke_306 = function (it) {
+  _no_name_provided__190.prototype.invoke_318 = function (it) {
     playerList_getInstance().remove_34(this._$each_4);
   };
-  _no_name_provided__184.prototype.invoke_81 = function (p1) {
-    this.invoke_306(p1 instanceof Event ? p1 : THROW_CCE());
+  _no_name_provided__190.prototype.invoke_81 = function (p1) {
+    this.invoke_318(p1 instanceof Event ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__184.$metadata$ = {
+  _no_name_provided__190.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__185() {
+  function _no_name_provided__191() {
   }
-  _no_name_provided__185.prototype.invoke_73 = function () {
+  _no_name_provided__191.prototype.invoke_73 = function () {
     return [];
   };
-  _no_name_provided__185.$metadata$ = {
+  _no_name_provided__191.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__186() {
+  function _no_name_provided__192() {
   }
-  _no_name_provided__186.prototype.invoke_113 = function (_this__0) {
+  _no_name_provided__192.prototype.invoke_113 = function (_this__0) {
     _set_id_(_this__0, 'pregame-playerList');
   };
-  _no_name_provided__186.prototype.invoke_81 = function (p1) {
+  _no_name_provided__192.prototype.invoke_81 = function (p1) {
     this.invoke_113(p1 instanceof DIV ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__186.$metadata$ = {
+  _no_name_provided__192.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided__187($each_4) {
+  function _no_name_provided__193($each_4) {
     this._$each_4_0 = $each_4;
   }
-  _no_name_provided__187.prototype.invoke_100 = function (_this__0) {
-    _set_onClickFunction_(_this__0, _no_name_provided_$factory_156(this._$each_4_0));
+  _no_name_provided__193.prototype.invoke_100 = function (_this__0) {
+    _set_onClickFunction_(_this__0, _no_name_provided_$factory_162(this._$each_4_0));
     _this__0.unaryPlus_54(this._$each_4_0);
   };
-  _no_name_provided__187.prototype.invoke_81 = function (p1) {
+  _no_name_provided__193.prototype.invoke_81 = function (p1) {
     this.invoke_100(p1 instanceof SPAN ? p1 : THROW_CCE());
     return Unit_getInstance();
   };
-  _no_name_provided__187.$metadata$ = {
+  _no_name_provided__193.$metadata$ = {
     kind: 'class',
     interfaces: []
   };
@@ -24007,7 +24160,7 @@
       var tmp = this;
       var tmp_0 = session_getInstance().get_53('players');
       var tmp_1 = (!(tmp_0 == null) ? isArray(tmp_0) : false) ? tmp_0 : null;
-      tmp._players = whenNull(tmp_1, _no_name_provided_$factory_153());
+      tmp._players = whenNull(tmp_1, _no_name_provided_$factory_159());
     } else {
     }
     return this._players;
@@ -24035,7 +24188,7 @@
     var tmp0_div_0 = _get_create_(document);
     var tmp1_div_0 = null;
     var tmp0_visitAndFinalize_0_2 = new DIV(attributesMapOf('class', tmp1_div_0), tmp0_div_0);
-    var tmp = visitTagAndFinalize(tmp0_visitAndFinalize_0_2, tmp0_div_0, _no_name_provided_$factory_154());
+    var tmp = visitTagAndFinalize(tmp0_visitAndFinalize_0_2, tmp0_div_0, _no_name_provided_$factory_160());
     var newList = tmp instanceof HTMLDivElement ? tmp : THROW_CCE();
     var tmp2_forEach_0 = this._get_players_();
     var indexedObject = tmp2_forEach_0;
@@ -24050,7 +24203,7 @@
       var tmp0_visitAndFinalize_0_2_7 = new SPAN(attributesMapOf('class', tmp1_span_0_6), tmp0_span_0_5);
       (function () {
         var $externalVarargReceiverTmp = newList;
-        return $externalVarargReceiverTmp.append.apply($externalVarargReceiverTmp, [].concat([visitTagAndFinalize(tmp0_visitAndFinalize_0_2_7, tmp0_span_0_5, _no_name_provided_$factory_155(each_4))]));
+        return $externalVarargReceiverTmp.append.apply($externalVarargReceiverTmp, [].concat([visitTagAndFinalize(tmp0_visitAndFinalize_0_2_7, tmp0_span_0_5, _no_name_provided_$factory_161(each_4))]));
       }.call(this));
     }
     (function () {
@@ -24192,131 +24345,131 @@
     kind: 'class',
     interfaces: []
   };
-  function _no_name_provided_$factory_138() {
-    var i = new _no_name_provided__176();
-    return function (p1) {
-      i.invoke_306(p1);
-      return Unit_getInstance();
-    };
-  }
-  function _no_name_provided_$factory_139() {
-    var i = new _no_name_provided__177();
-    return function (p1) {
-      i.invoke_306(p1);
-      return Unit_getInstance();
-    };
-  }
-  function _no_name_provided_$factory_140() {
-    var i = new _no_name_provided__178();
-    return function (p1) {
-      i.invoke_306(p1);
-      return Unit_getInstance();
-    };
-  }
-  function _no_name_provided_$factory_141() {
-    var i = new _no_name_provided__179();
-    return function (p1) {
-      i.invoke_299(p1);
-      return Unit_getInstance();
-    };
-  }
-  function _no_name_provided_$factory_142($cardDyn) {
-    var i = new _no_name_provided__170($cardDyn);
-    return function () {
-      return i.invoke_73();
-    };
-  }
-  function _no_name_provided_$factory_143() {
-    var i = new _no_name_provided__171();
-    return function () {
-      i.invoke_302();
-      return Unit_getInstance();
-    };
-  }
   function _no_name_provided_$factory_144() {
-    var i = new _no_name_provided__172();
-    return function () {
-      i.invoke_302();
+    var i = new _no_name_provided__182();
+    return function (p1) {
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_145($cardDyn) {
-    var i = new _no_name_provided__169($cardDyn);
-    return function () {
-      i.invoke_302();
+  function _no_name_provided_$factory_145() {
+    var i = new _no_name_provided__183();
+    return function (p1) {
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_146() {
-    var i = new _no_name_provided__173();
-    return function () {
-      i.invoke_302();
+    var i = new _no_name_provided__184();
+    return function (p1) {
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_147() {
-    var i = new _no_name_provided__174();
-    return function () {
-      i.invoke_302();
+    var i = new _no_name_provided__185();
+    return function (p1) {
+      i.invoke_311(p1);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_148() {
-    var i = new _no_name_provided__175();
+  function _no_name_provided_$factory_148($cardDyn) {
+    var i = new _no_name_provided__176($cardDyn);
     return function () {
-      i.invoke_302();
-      return Unit_getInstance();
+      return i.invoke_73();
     };
   }
   function _no_name_provided_$factory_149() {
-    var i = new _no_name_provided__180();
+    var i = new _no_name_provided__177();
     return function () {
-      return i.invoke_73();
+      i.invoke_314();
+      return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_150() {
-    var i = new _no_name_provided__182();
+    var i = new _no_name_provided__178();
     return function () {
-      return i.invoke_73();
+      i.invoke_314();
+      return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_151($cardDynamic, $cardElement) {
-    var i = new _no_name_provided__183($cardDynamic, $cardElement);
+  function _no_name_provided_$factory_151($cardDyn) {
+    var i = new _no_name_provided__175($cardDyn);
     return function () {
-      return i.invoke_73();
+      i.invoke_314();
+      return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_152($cardElement) {
-    var i = new _no_name_provided__181($cardElement);
+  function _no_name_provided_$factory_152() {
+    var i = new _no_name_provided__179();
     return function () {
-      i.invoke_302();
+      i.invoke_314();
       return Unit_getInstance();
     };
   }
   function _no_name_provided_$factory_153() {
-    var i = new _no_name_provided__185();
+    var i = new _no_name_provided__180();
+    return function () {
+      i.invoke_314();
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided_$factory_154() {
+    var i = new _no_name_provided__181();
+    return function () {
+      i.invoke_314();
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided_$factory_155() {
+    var i = new _no_name_provided__186();
     return function () {
       return i.invoke_73();
     };
   }
-  function _no_name_provided_$factory_154() {
-    var i = new _no_name_provided__186();
+  function _no_name_provided_$factory_156() {
+    var i = new _no_name_provided__188();
+    return function () {
+      return i.invoke_73();
+    };
+  }
+  function _no_name_provided_$factory_157($cardDynamic, $cardElement) {
+    var i = new _no_name_provided__189($cardDynamic, $cardElement);
+    return function () {
+      return i.invoke_73();
+    };
+  }
+  function _no_name_provided_$factory_158($cardElement) {
+    var i = new _no_name_provided__187($cardElement);
+    return function () {
+      i.invoke_314();
+      return Unit_getInstance();
+    };
+  }
+  function _no_name_provided_$factory_159() {
+    var i = new _no_name_provided__191();
+    return function () {
+      return i.invoke_73();
+    };
+  }
+  function _no_name_provided_$factory_160() {
+    var i = new _no_name_provided__192();
     return function (p1) {
       i.invoke_113(p1);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_155($each_4) {
-    var i = new _no_name_provided__187($each_4);
+  function _no_name_provided_$factory_161($each_4) {
+    var i = new _no_name_provided__193($each_4);
     return function (p1) {
       i.invoke_100(p1);
       return Unit_getInstance();
     };
   }
-  function _no_name_provided_$factory_156($each_4) {
-    var i = new _no_name_provided__184($each_4);
+  function _no_name_provided_$factory_162($each_4) {
+    var i = new _no_name_provided__190($each_4);
     return function (p1) {
-      i.invoke_306(p1);
+      i.invoke_318(p1);
       return Unit_getInstance();
     };
   }
@@ -24450,6 +24603,8 @@
   letterRangeLowerCase = (new Char_0(97)).rangeTo(new Char_0(122));
   letterRangeUpperCase = (new Char_0(65)).rangeTo(new Char_0(90));
   digitRange = (new Char_0(48)).rangeTo(new Char_0(57));
+  urlsToCache = urlsToCache$init$();
+  CACHE_NAME = 'v1.0.0';
   main();
   return _;
 }));

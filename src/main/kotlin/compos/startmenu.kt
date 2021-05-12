@@ -14,6 +14,7 @@ import kotlinx.html.dom.create
 import kotlinx.html.id
 import kotlinx.html.js.div
 import kotlinx.html.js.onClickFunction
+import optionsDoAfter
 import org.w3c.dom.HTMLDivElement
 import org.w3c.dom.get
 import shareRoutine
@@ -47,19 +48,7 @@ fun startmenu(): HTMLDivElement {
                 classes += "startMenu-btn"
                 classes += "btn"
                 onClickFunction = { _ ->
-                    changePage(options()) {
-                        val wrapper = document.querySelectorAll(".options-wrapperInside")
-                        options.updateAllViews()
-                        if (isMobile()) {
-                            repeat(wrapper.length) {
-                                wrapper[it].asDynamic().style.flexDirection = "column"
-                            }
-                        } else {
-                            repeat(wrapper.length) {
-                                wrapper[it].asDynamic().style.flexDirection = "row"
-                            }
-                        }
-                    }
+                    changePage(options()) { optionsDoAfter() }
                 }
                 +"Einstellungen"
             }

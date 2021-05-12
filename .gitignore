@@ -3,10 +3,5 @@
 /build/
 !build/
 build/*
-!build/js/
-build/js/*
-!build/js/packages/
-build/js/packages/*
-!build/js/packages/drinkingGameKt/
-build/js/packages/drinkingGameKt/*
-!build/js/packages/drinkingGameKt/kotlin/
+!build/distributions/
+build/distributions/*
