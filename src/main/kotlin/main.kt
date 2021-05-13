@@ -14,6 +14,8 @@ import org.w3c.workers.ServiceWorkerGlobalScope
 
 external val self: ServiceWorkerGlobalScope
 
+// TODO: 5/13/2021 sw doesnt work; make back button usable (changePage to likely page)
+
 fun main() {
     window.onload = {
         document.querySelector("#version")!!.textContent = CACHE_NAME
@@ -71,10 +73,11 @@ val urlsToCache = arrayOf(
 fun serviceWorker() {
     try {
         window.addEventListener("load", {
-            window.navigator.serviceWorker.register("/kotlin-js-pwa.js")
+            window.navigator.serviceWorker.register("/drinkingGameKt.js")
         })
     } catch (t: Throwable) {
         self.addEventListener("install", { ev ->
+            console.log("Service Worker installed!")
             ev as InstallEvent
             ev.waitUntil(
                 self.caches.open(CACHE_NAME)
