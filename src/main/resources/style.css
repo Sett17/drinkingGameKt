@@ -4,6 +4,10 @@
     font-display: auto
 }
 
+pwa-update {
+    opacity: 0.0 !important;
+}
+
 * {
     transition: all 150ms;
     font-family: 'SF-Pro', sans-serif;

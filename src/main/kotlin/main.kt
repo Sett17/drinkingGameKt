@@ -19,7 +19,7 @@ external val self: ServiceWorkerGlobalScope
 fun main() {
     window.onload = {
         document.querySelector("#version")!!.textContent = CACHE_NAME
-        serviceWorker()
+//        serviceWorker()
         when (window.location.hash) {
             "#startemenu" -> changePage(startmenu())
             "#pregame"    -> changePage(pregame()) { playerList.update() }
@@ -51,49 +51,54 @@ fun changePage(compo: HTMLDivElement, doAfter: () -> Unit = {}) {
 }
 
 const val CACHE_NAME = "v1.0.0"
-val urlsToCache = arrayOf(
-    "/",
-    "/drinkingGameKt.js",
-    "/index.html",
-    "/manifest.webmanifest",
-    "/style.css",
-    "/assets/bottle.svg",
-    "/assets/cards.js",
-    "/assets/down_arrow.js",
-    "/assets/down_arrow.js",
-    "/assets/favicon.ico",
-    "/assets/icon.png",
-    "/assets/icon.webp",
-    "/assets/icon-ios.png",
-    "/assets/maskable_icon.png",
-    "/assets/SF-UI-Text-Regular.otf",
-)
-
-
-fun serviceWorker() {
-    try {
-        window.addEventListener("load", {
-            window.navigator.serviceWorker.register("/drinkingGameKt.js")
-        })
-    } catch (t: Throwable) {
-        self.addEventListener("install", { ev ->
-            console.log("Service Worker installed!")
-            ev as InstallEvent
-            ev.waitUntil(
-                self.caches.open(CACHE_NAME)
-                    .then { it.addAll(urlsToCache) }
-            )
-        })
-        self.addEventListener("fetch", { ev ->
-            ev as FetchEvent
-            self.caches.match(ev.request)
-                .then {
-                    it as Response?
-                    return@then it ?: self.fetch(ev.request)
-                }
-        })
-        self.addEventListener("activate", {
-            console.log("Service Worker is now active!")
-        })
-    }
-}
+//val urlsToCache = arrayOf(
+//    "/",
+//    "/drinkingGameKt.js",
+//    "/index.html",
+//    "/manifest.webmanifest",
+//    "/style.css",
+//    "/assets/bottle.svg",
+//    "/assets/cards.js",
+//    "/assets/down_arrow.js",
+//    "/assets/down_arrow.js",
+//    "/assets/favicon.ico",
+//    "/assets/icon.png",
+//    "/assets/icon.webp",
+//    "/assets/icon-ios.png",
+//    "/assets/maskable_icon.png",
+//    "/assets/SF-UI-Text-Regular.otf",
+//)
+//
+//
+//fun serviceWorker() {
+//    console.log("jett mach sw")
+//    try {
+//        console.log("load addev")
+//        window.addEventListener("load", {
+//            window.navigator.serviceWorker.register("/drinkingGameKt.js")
+//            console.log("sw registered")
+//        })
+//        window.navigator.serviceWorker.register("/drinkingGameKt.js")
+//    } catch (t: Throwable) {
+//        console.log(t)
+//        self.addEventListener("install", { ev ->
+//            console.log("Service Worker installed!")
+//            ev as InstallEvent
+//            ev.waitUntil(
+//                self.caches.open(CACHE_NAME)
+//                    .then { it.addAll(urlsToCache) }
+//            )
+//        })
+//        self.addEventListener("fetch", { ev ->
+//            ev as FetchEvent
+//            self.caches.match(ev.request)
+//                .then {
+//                    it as Response?
+//                    return@then it ?: self.fetch(ev.request)
+//                }
+//        })
+//        self.addEventListener("activate", {
+//            console.log("Service Worker is now active!")
+//        })
+//    }
+//}
