@@ -2,6 +2,7 @@ import compos.cardCompo
 import compos.startmenu
 import interactions.addInteractions
 import kotlinx.browser.document
+import kotlinx.browser.localStorage
 import kotlinx.browser.sessionStorage
 import kotlinx.browser.window
 import kotlinx.dom.addClass
@@ -15,6 +16,7 @@ import kotlinx.html.span
 import org.w3c.dom.Element
 import org.w3c.dom.get
 import org.w3c.dom.set
+import org.w3c.workers.ServiceWorkerRegistration
 import kotlin.math.*
 import kotlin.random.Random
 
@@ -348,6 +350,18 @@ object playerList {
             })
         }
         document.querySelector("#pregame-playerList")!!.replaceWith(newList)
+    }
+}
+
+fun reloadFresh() {
+    window.navigator.serviceWorker.getRegistration().then {
+        it as ServiceWorkerRegistration
+
+        sessionStorage.clear()
+        localStorage.clear()
+
+        it.unregister()
+        window.location.reload()
     }
 }
 
