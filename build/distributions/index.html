@@ -7,14 +7,14 @@
     <meta name="theme-color" content="#1d1d1d">
     <meta name="description" content="Die wahre Trinkspiel App!">
     <meta name="author" content="Sett | Raik Rohde">
-<!--    <link rel="preload" href="/assets/SF-UI-Text-Regular.otf" as="font">-->
+    <!--    <link rel="preload" href="/assets/SF-UI-Text-Regular.otf" as="font">-->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icon.webp">
     <link rel="apple-touch-icon" href="assets/icon-ios.png">
     <link rel="manifest" href="manifest.webmanifest">
     <script src="assets/cards.js"></script>
-<!--    <script src="helpers.js"></script>-->
-<!--    <script src="options.js"></script>-->
+    <!--    <script src="helpers.js"></script>-->
+    <!--    <script src="options.js"></script>-->
     <script src="drinkingGameKt.js"></script>
     <title>Trink!</title>
 </head>
@@ -43,6 +43,12 @@
         Beenden?
     </button>
 </div>
+
+<script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);</script>
 </body>
 
 </html>
