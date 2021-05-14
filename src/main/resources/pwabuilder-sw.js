@@ -1,4 +1,7 @@
 // This is the "Offline copy of assets" service worker
+
+const CACHE = 'v1.0.1'
+
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 self.addEventListener("message", (event) => {
