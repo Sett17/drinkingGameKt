@@ -18,7 +18,7 @@ import org.w3c.workers.ServiceWorkerGlobalScope
 
 external val self: ServiceWorkerGlobalScope
 
-external val CACHE: String
+const val CACHE = "v1.0.1"
 
 // TODO: 5/13/2021 make back button usable (changePage to likely page)
 
