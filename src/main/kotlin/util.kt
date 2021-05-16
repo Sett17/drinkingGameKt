@@ -354,10 +354,9 @@ object playerList {
 }
 
 fun reloadFresh() {
-    console.log("re fresh")
     window.navigator.serviceWorker.getRegistration().then {
         it as ServiceWorkerRegistration
-        if (currentPage == "#play") {
+        if (currentPage != "#play") {
             sessionStorage.clear()
             localStorage.clear()
 
