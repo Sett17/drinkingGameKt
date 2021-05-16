@@ -31,6 +31,7 @@ fun main() {
             div {
                 id = "version"
                 onClickFunction = {
+                    console.log("v btn")
                     reloadFresh()
                 }
                 +CACHE
