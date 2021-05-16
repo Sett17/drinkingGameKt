@@ -22,9 +22,6 @@ const val CACHE = "v1.1.0"
 
 var currentPage = "#startmenu"
 
-// TODO: 5/13/2021 make back button usable (changePage to likely page)
-// TODO: 5/15/2021 animation on keypresses
-
 fun main() {
     window.onpopstate = {
         handlePageChange()
@@ -38,7 +35,6 @@ fun main() {
                 }
                 +CACHE
             }
-//              <div id="version" onclick="reloadFresh()">holaque</div>
         }
         handlePageChange()
     }
