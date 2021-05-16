@@ -186,7 +186,7 @@ object interactions {
                 document.querySelector("#card").asDynamic().style.transition = "all ${constants.animTimeOut * 2}ms"
                 document.querySelector("#play-name").asDynamic().style.transition = "all ${constants.animTimeOut * 2}ms"
                 document.querySelector("#play-name").asDynamic().style.opacity = "0.0"
-                document.querySelector("#card").asDynamic().style.opacity = getMatrix(
+                document.querySelector("#card").asDynamic().style.transform = getMatrix(
                     0.4 * sin(params.first),
                     sign(params.first) * zoneSize.first * 3.5,
                     offsetY + params.second * zoneSize.second * 2.3
@@ -356,12 +356,13 @@ object playerList {
 fun reloadFresh() {
     window.navigator.serviceWorker.getRegistration().then {
         it as ServiceWorkerRegistration
+        if (currentPage == "#play") {
+            sessionStorage.clear()
+            localStorage.clear()
 
-        sessionStorage.clear()
-        localStorage.clear()
-
-        it.unregister()
-        window.location.reload()
+            it.unregister()
+            window.location.reload()
+        }
     }
 }
 

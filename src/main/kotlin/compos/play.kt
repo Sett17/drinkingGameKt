@@ -1,5 +1,6 @@
 package compos
 
+import currentPage
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.html.div
@@ -14,6 +15,7 @@ import org.w3c.dom.HTMLDivElement
 fun play(): HTMLDivElement {
 
     window.location.hash = "#play"
+    currentPage = "#play"
 
     game.isRunning = true
 

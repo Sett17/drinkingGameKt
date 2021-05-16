@@ -3,6 +3,7 @@
 package compos
 
 import changePage
+import currentPage
 import isMobile
 import kotlinx.browser.document
 import kotlinx.browser.window
@@ -15,6 +16,7 @@ import org.w3c.dom.events.KeyboardEvent
 fun pregame(): HTMLDivElement {
 
     window.location.hash = "#pregame"
+    currentPage = "#pregame"
 
     return document.create.div {
         id = "root"

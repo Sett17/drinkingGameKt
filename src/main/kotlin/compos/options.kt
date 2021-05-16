@@ -3,6 +3,7 @@
 package compos
 
 import changePage
+import currentPage
 import isMobile
 import kotlinx.browser.document
 import kotlinx.browser.window
@@ -17,6 +18,7 @@ import org.w3c.dom.HTMLDivElement
 fun options(): HTMLDivElement {
 
     window.location.hash = "#options"
+    currentPage = "#options"
 
     return document.create.div {
         id = "root"

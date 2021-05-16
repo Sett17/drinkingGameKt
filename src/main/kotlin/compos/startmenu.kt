@@ -3,6 +3,7 @@
 package compos
 
 import changePage
+import currentPage
 import isMobile
 import kotlinx.browser.document
 import kotlinx.browser.sessionStorage
@@ -22,6 +23,7 @@ import shareRoutine
 fun startmenu(): HTMLDivElement {
 
     window.location.hash = "#startmenu"
+    currentPage = "#startmenu"
 
     game.isRunning = false
 //    sessionStorage.clear()

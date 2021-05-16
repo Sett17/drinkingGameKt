@@ -18,11 +18,17 @@ import org.w3c.workers.ServiceWorkerGlobalScope
 
 external val self: ServiceWorkerGlobalScope
 
-const val CACHE = "v1.0.1"
+const val CACHE = "v1.1.0"
+
+var currentPage = "#startmenu"
 
 // TODO: 5/13/2021 make back button usable (changePage to likely page)
+// TODO: 5/15/2021 animation on keypresses
 
 fun main() {
+    window.onpopstate = {
+        handlePageChange()
+    }
     window.onload = {
         document.body!!.append {
             div {
@@ -34,15 +40,24 @@ fun main() {
             }
 //              <div id="version" onclick="reloadFresh()">holaque</div>
         }
-        when (window.location.hash) {
-            "#startemenu" -> changePage(startmenu())
-            "#pregame"    -> changePage(pregame()) { playerList.update() }
-            "#play"       -> changePage(play()) { availableCards.putCard() }
-            "#options"    -> changePage(options()) { optionsDoAfter() }
-            else          -> changePage(startmenu())
-        }
+        handlePageChange()
     }
 
+}
+
+fun handlePageChange() {
+    console.log("page change!")
+    if (window.location.hash == "#pregame" && currentPage == "#play") {
+        window.location.hash = "#play"
+        return
+    }
+    when (window.location.hash) {
+        "#startemenu" -> changePage(startmenu())
+        "#pregame"    -> changePage(pregame()) { playerList.update() }
+        "#play"       -> changePage(play()) { availableCards.putCard() }
+        "#options"    -> changePage(options()) { optionsDoAfter() }
+        else          -> changePage(startmenu())
+    }
 }
 
 fun optionsDoAfter() {
