@@ -18,7 +18,9 @@ import org.w3c.workers.ServiceWorkerGlobalScope
 
 external val self: ServiceWorkerGlobalScope
 
-const val CACHE = "v1.1.0"
+// TODO: 5/16/2021 hiding elements on pregame on mobile bugs
+
+const val CACHE = "v1.1.1"
 
 var currentPage = "#startmenu"
 
@@ -42,7 +44,6 @@ fun main() {
 }
 
 fun handlePageChange() {
-    console.log("page change!")
     if (window.location.hash == "#pregame" && currentPage == "#play") {
         window.location.hash = "#play"
         return
