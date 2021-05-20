@@ -19,6 +19,7 @@ import org.w3c.workers.ServiceWorkerGlobalScope
 external val self: ServiceWorkerGlobalScope
 
 // TODO: 5/16/2021 hiding elements on pregame on mobile bugs
+// TODO somehow make dragging way smoother; no idea how tho
 
 const val CACHE = "v1.1.1"
 
