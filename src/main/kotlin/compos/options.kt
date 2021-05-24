@@ -76,9 +76,9 @@ fun options(): HTMLDivElement {
                             attributes["data-id"] = "1"
                             onClickFunction = {
                                 options.theme.isDark = when (this.attributes["data-id"]) {
-                                    "0"  -> true
-                                    "1"  -> false
-                                    else -> true
+                                    "0"  -> false
+                                    "1"  -> true
+                                    else -> false
                                 }
                             }
                         }
@@ -86,9 +86,9 @@ fun options(): HTMLDivElement {
                             classes += "options-switchTitle"
                             onClickFunction = {
                                 options.theme.isDark = when (js("this.previousSibling.previousSibling.dataset.id")) {
-                                    "0"  -> true
-                                    "1"  -> false
-                                    else -> true
+                                    "0"  -> false
+                                    "1"  -> true
+                                    else -> false
                                 }
                             }
                             +"Dunkel"
