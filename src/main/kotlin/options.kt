@@ -10,12 +10,12 @@ object options {
     object theme {
         var isDark: Boolean? = null
             set(value) {
-                session["isLight"] = value
+                session["isDark"] = value
                 field = value
                 updateView()
             }
             get() {
-                field = field ?: run { session["isLight"] as? Boolean } ?: run { true }
+                field = field ?: run { session["isDark"] as? Boolean } ?: run { true }
                 return field
             }
 
