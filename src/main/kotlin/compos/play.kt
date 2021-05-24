@@ -19,6 +19,10 @@ fun play(): HTMLDivElement {
     return document.create.div {
         id = "root"
         div {
+            id = "play-name"
+            +"spater"
+        }
+        div {
             id = "play-spacer"
             span {
                 +"Trinkalternative"
@@ -35,8 +39,11 @@ fun play(): HTMLDivElement {
                 )
             }
         }
-        canvas {
-            id = "canv"
+        div {
+            id = "card-wrapper"
+            div {
+                id = "card"
+            }
         }
     }
 }

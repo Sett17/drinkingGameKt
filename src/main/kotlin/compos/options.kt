@@ -49,7 +49,7 @@ fun options(): HTMLDivElement {
                             classes += "btn"
                             attributes["data-id"] = "0"
                             onClickFunction = {
-                                options.theme.isLight = when (this.attributes["data-id"]) {
+                                options.theme.isDark = when (this.attributes["data-id"]) {
                                     "0"  -> true
                                     "1"  -> false
                                     else -> true
@@ -59,7 +59,7 @@ fun options(): HTMLDivElement {
                         div {
                             classes += "options-switchTitle"
                             onClickFunction = {
-                                options.theme.isLight = when (js("this.previousSibling.previousSibling.dataset.id")) {
+                                options.theme.isDark = when (js("this.previousSibling.previousSibling.dataset.id")) {
                                     "0"  -> true
                                     "1"  -> false
                                     else -> true
@@ -75,7 +75,7 @@ fun options(): HTMLDivElement {
                             classes += "btn"
                             attributes["data-id"] = "1"
                             onClickFunction = {
-                                options.theme.isLight = when (this.attributes["data-id"]) {
+                                options.theme.isDark = when (this.attributes["data-id"]) {
                                     "0"  -> true
                                     "1"  -> false
                                     else -> true
@@ -85,7 +85,7 @@ fun options(): HTMLDivElement {
                         div {
                             classes += "options-switchTitle"
                             onClickFunction = {
-                                options.theme.isLight = when (js("this.previousSibling.previousSibling.dataset.id")) {
+                                options.theme.isDark = when (js("this.previousSibling.previousSibling.dataset.id")) {
                                     "0"  -> true
                                     "1"  -> false
                                     else -> true

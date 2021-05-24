@@ -9,6 +9,7 @@
     --backgroundColor: #e6e6e6;
     --darkShadow: #c4c4c4;
     --lightShadow: #ffffff;
+    /*--lightShadow: transparent;*/
     --textColor: #1e1e1e;
 }
 
@@ -16,8 +17,8 @@
 /*region darkcolors*/
 .themeDark {
     --backgroundColor: #1e1e1e;
-    --darkShadow: #151515;
-    --lightShadow: #272727;
+    --darkShadow: #111111;
+    --lightShadow: #2b2b2b;
     --textColor: floralwhite;
 }
 
@@ -139,7 +140,8 @@ html, body {
 }
 
 .startMenu-btn {
-    width: min(60vw, 300px);
+    width: 60vw;
+    max-width: 300px;
     height: 8vh;
     font-size: 1.2em;
 }
@@ -201,6 +203,218 @@ html, body {
     width: 5.5vh;
     height: 5.5vh;
     margin: .5vh;
+}
+
+/*endregion*/
+
+/*region pregame*/
+
+#pregame-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2.5em;
+}
+
+#pregame-content {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#pregame-playerList {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: in forwards;
+    border-radius: 5vh;
+    padding: 2vh;
+    width: 80vw;
+    max-width: 600px;
+    min-height: 20vh;
+    font-size: 1.2em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#pregame-playerList span {
+    display: block;
+    /*width: 50%;*/
+    text-align: center;
+    animation: out forwards;
+    padding: 1.5vh;
+    margin: .8vh;
+    border-radius: 100vh;
+    cursor: pointer;
+}
+
+#pregame-playerList span:hover {
+    animation: in forwards;
+}
+
+#pregame-playernameInp {
+    border: none;
+    width: 60vw;
+    max-width: 500px;
+    height: 8.5vh;
+    border-radius: 100vh;
+    line-height: 8vh;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+    outline: none;
+    animation: in 70ms linear forwards;
+}
+
+#pregame-addPlayerBtn {
+    height: 10vh;
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    outline: none;
+}
+
+#pregame-btnwrapper {
+    display: flex;
+    width: 100vw;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+#pregame-playBtn {
+    height: 7vh;
+    width: 40vw;
+    border-radius: 6vh;
+    font-size: 1.3em;
+}
+
+.pregame-hidden {
+    position: absolute;
+    visibility: hidden;
+}
+
+/*endregion*/
+
+/*region play*/
+
+#play-name {
+    flex: 1.8;
+    display: flex;
+    font-size: 2.5em;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#play-spacer {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--textColor);
+    font-size: 1.1em;
+}
+
+#play-spacer svg path {
+    stroke: var(--textColor);
+}
+
+#card-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    font-size: 1.6em;
+}
+
+#card {
+    height: 50vh;
+    position: absolute;
+    transform: matrix(1, 0, 0, 1, 0, 40);
+    transition: all 0ms;
+    width: 33.33vh;
+    border-radius: 5vh;
+    animation: out forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: var(--backgroundColor);
+    pointer-events: auto;
+}
+
+#card-title {
+    /*flex: 1;*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: clamp(0.3em, 6.7vw, 1em);
+    word-break: break-word;
+    text-align: center;
+    width: 85%;
+    padding-top: 5%;
+
+    pointer-events: none;
+}
+
+#card-text {
+    /*flex: 5;*/
+    word-wrap: normal;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(.3em, 4.6vw, .7em);
+    text-align: center;
+    width: 80%;
+    pointer-events: none;
+}
+
+#card-footer {
+    /*flex: 1;*/
+    width: 85%;
+    font-size: .8em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+}
+
+#card-set {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-alt {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#card-alt svg {
+    margin-right: 3vw;
+}
+
+#card-alt svg path {
+    stroke: var(--textColor);
 }
 
 /*endregion*/

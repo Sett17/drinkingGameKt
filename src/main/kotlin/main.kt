@@ -21,7 +21,7 @@ external val self: ServiceWorkerGlobalScope
 // TODO: 5/16/2021 hiding elements on pregame on mobile bugs
 // TODO somehow make dragging way smoother; no idea how tho
 
-const val CACHE = "v1.1.1"
+const val CACHE = "v1.2.0"
 
 var currentPage = "#startmenu"
 
@@ -32,7 +32,7 @@ fun main() {
     window.onload = {
         document.documentElement!!.classList.remove("themeLight")
         document.documentElement!!.classList.remove("themeDark")
-        document.documentElement!!.classList.add(if (session["isLight"] == true) "themeLight" else "themeDark")
+        document.documentElement!!.classList.add(if (session["isDark"] == true) "themeDark" else "themeLight")
         document.body!!.append {
             div {
                 id = "version"

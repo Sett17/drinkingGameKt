@@ -8,7 +8,7 @@ object options {
     }
 
     object theme {
-        var isLight: Boolean? = null
+        var isDark: Boolean? = null
             set(value) {
                 session["isLight"] = value
                 field = value
@@ -20,17 +20,16 @@ object options {
             }
 
         fun updateView() {
-            if (isLight == true) {
+            if (isDark == true) {
                 document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"0\"]")?.setAttribute("active", "")
                 document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"1\"]")?.removeAttribute("active")
             } else {
                 document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"0\"]")?.removeAttribute("active")
                 document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"1\"]")?.setAttribute("active", "")
             }
-            console.log(isLight)
-            document.documentElement!!.classList.remove("themeLight")
             document.documentElement!!.classList.remove("themeDark")
-            document.documentElement!!.classList.add(if (isLight == true) "themeLight" else "themeDark")
+            document.documentElement!!.classList.remove("themeLight")
+            document.documentElement!!.classList.add(if (isDark == true) "themeDark" else "themeLight")
         }
     }
 

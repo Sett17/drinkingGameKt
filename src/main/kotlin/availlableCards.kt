@@ -44,39 +44,21 @@ object availableCards {
     }
 
     fun putCard() {
-        var x = 50.0
-        var y = 50.0
-        var height = 200.0
-        var width = 120.0
-        var cornerSize = 50.0
-
-        val ctx = (document.querySelector("#canv") as HTMLCanvasElement).getContext("2d") as CanvasRenderingContext2D
-
-        ctx.strokeStyle = "#FFFFFF"
-        ctx.lineWidth = 1.0
-        ctx.beginPath()
-
-        ctx.moveTo(x + cornerSize, y)
-        ctx.lineTo(x + width - cornerSize, y)
-        ctx.arcTo(x + width - cornerSize, y, x + width, y + cornerSize, cornerSize)
-        ctx.lineTo(x + width, y + height - cornerSize * 2)
-
-        ctx.stroke()
-//        document.querySelector("#play-name").asDynamic().style.opacity = "1.0"
-//        val nc = nextCard()
-//        document.querySelector("#card-wrapper")!!.innerHTML = cardCompo(nc).outerHTML
-//        val cardElement = document.querySelector("#card")!!
-//        val cardDynamic = cardElement.asDynamic()
-//        cardDynamic.style.transition = "all 0ms"
-//        cardDynamic.style.transform = "matrix(0.01, 0, 0, 0.01, 0, ${interactions.offsetY})"
-//        cardDynamic.style.opacity = "0.01"
-//        cardDynamic.style.transition = "all ${interactions.constants.animTimeIn}ms"
-//        window.setTimeout({
-//            cardDynamic.style.transform = "matrix(1, 0, 0, 1, 0, ${interactions.offsetY})"
-//            cardDynamic.style.opacity = "1.0"
-//            window.setTimeout({
-//                cardElement.addInteractions()
-//            }, interactions.constants.animTimeIn)
-//        }, 20)
+        document.querySelector("#play-name").asDynamic().style.opacity = "1.0"
+        val nc = nextCard()
+        document.querySelector("#card-wrapper")!!.innerHTML = cardCompo(nc).outerHTML
+        val cardElement = document.querySelector("#card")!!
+        val cardDynamic = cardElement.asDynamic()
+        cardDynamic.style.transition = "all 0ms"
+        cardDynamic.style.transform = "matrix(0.01, 0, 0, 0.01, 0, ${interactions.offsetY})"
+        cardDynamic.style.opacity = "0.01"
+        cardDynamic.style.transition = "all ${interactions.constants.animTimeIn}ms"
+        window.setTimeout({
+            cardDynamic.style.transform = "matrix(1, 0, 0, 1, 0, ${interactions.offsetY})"
+            cardDynamic.style.opacity = "1.0"
+            window.setTimeout({
+                cardElement.addInteractions()
+            }, interactions.constants.animTimeIn)
+        }, 20)
     }
 }
