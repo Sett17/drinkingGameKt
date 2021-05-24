@@ -2,6 +2,11 @@ import compos.cardCompo
 import interactions.addInteractions
 import kotlinx.browser.document
 import kotlinx.browser.window
+import kotlinx.html.CANVAS
+import kotlinx.html.stream.createHTML
+import org.w3c.dom.CanvasRenderingContext2D
+import org.w3c.dom.HTMLCanvasElement
+import kotlin.math.PI
 
 
 external val cards: Array<card>

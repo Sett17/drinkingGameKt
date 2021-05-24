@@ -53,6 +53,8 @@ fun pregame(): HTMLDivElement {
                 id = "pregame-addPlayerBtn"
                 classes += "btn"
                 onClickFunction = {
+                    //todo max 20 players
+                    //todo no empty names
                     rumbler.rumble()
                     document.querySelector("#pregame-playernameInp").asDynamic().value?.toString()?.trim()?.capitalize()?.let {
                         playerList.add(it)

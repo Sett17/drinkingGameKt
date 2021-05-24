@@ -3,13 +3,10 @@ package compos
 import currentPage
 import kotlinx.browser.document
 import kotlinx.browser.window
-import kotlinx.html.div
+import kotlinx.html.*
 import kotlinx.html.dom.create
-import kotlinx.html.id
 import kotlinx.html.js.div
 import kotlinx.html.js.onLoadFunction
-import kotlinx.html.span
-import kotlinx.html.unsafe
 import org.w3c.dom.HTMLDivElement
 
 fun play(): HTMLDivElement {
