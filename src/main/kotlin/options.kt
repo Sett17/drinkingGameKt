@@ -4,6 +4,34 @@ object options {
     fun updateAllViews() {
         difficulty.updateView()
         rumble.updateView()
+        theme.updateView()
+    }
+
+    object theme {
+        var isLight: Boolean? = null
+            set(value) {
+                session["isLight"] = value
+                field = value
+                updateView()
+            }
+            get() {
+                field = field ?: run { session["isLight"] as? Boolean } ?: run { true }
+                return field
+            }
+
+        fun updateView() {
+            if (isLight == true) {
+                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"0\"]")?.setAttribute("active", "")
+                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"1\"]")?.removeAttribute("active")
+            } else {
+                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"0\"]")?.removeAttribute("active")
+                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"1\"]")?.setAttribute("active", "")
+            }
+            console.log(isLight)
+            document.documentElement!!.classList.remove("themeLight")
+            document.documentElement!!.classList.remove("themeDark")
+            document.documentElement!!.classList.add(if (isLight == true) "themeLight" else "themeDark")
+        }
     }
 
     object difficulty {

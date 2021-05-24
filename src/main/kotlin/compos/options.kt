@@ -23,18 +23,79 @@ fun options(): HTMLDivElement {
     return document.create.div {
         id = "root"
         div {
-            id = "options-top"
-            div {
-                id = "options-backbtn"
-                classes += "btn"
-                onClickFunction = { _ ->
-                    changePage(startmenu())
-                }
-                +"«"
+            id = "options-backbtn"
+            classes += "btn"
+            onClickFunction = { _ ->
+                changePage(startmenu())
             }
+            +"«"
         }
+
         div {
             id = "options-switches"
+            div {
+                id = "options-themeWrapper"
+                classes += "options-wrapper"
+                div {
+                    classes += "options-wrapperTitle"
+                    +"Theme"
+                }
+                div {
+                    classes += "options-wrapperInside"
+                    div {
+                        classes += "options-switch"
+                        div {
+                            classes += "options-chkbx"
+                            classes += "btn"
+                            attributes["data-id"] = "0"
+                            onClickFunction = {
+                                options.theme.isLight = when (this.attributes["data-id"]) {
+                                    "0"  -> true
+                                    "1"  -> false
+                                    else -> true
+                                }
+                            }
+                        }
+                        div {
+                            classes += "options-switchTitle"
+                            onClickFunction = {
+                                options.theme.isLight = when (js("this.previousSibling.previousSibling.dataset.id")) {
+                                    "0"  -> true
+                                    "1"  -> false
+                                    else -> true
+                                }
+                            }
+                            +"Hell"
+                        }
+                    }
+                    div {
+                        classes += "options-switch"
+                        div {
+                            classes += "options-chkbx"
+                            classes += "btn"
+                            attributes["data-id"] = "1"
+                            onClickFunction = {
+                                options.theme.isLight = when (this.attributes["data-id"]) {
+                                    "0"  -> true
+                                    "1"  -> false
+                                    else -> true
+                                }
+                            }
+                        }
+                        div {
+                            classes += "options-switchTitle"
+                            onClickFunction = {
+                                options.theme.isLight = when (js("this.previousSibling.previousSibling.dataset.id")) {
+                                    "0"  -> true
+                                    "1"  -> false
+                                    else -> true
+                                }
+                            }
+                            +"Dunkel"
+                        }
+                    }
+                }
+            }
             div {
                 id = "options-difficultyWrapper"
                 classes += "options-wrapper"
@@ -48,6 +109,7 @@ fun options(): HTMLDivElement {
                         classes += "options-switch"
                         div {
                             classes += "options-chkbx"
+                            classes += "btn"
                             attributes["data-id"] = "0"
                             onClickFunction = {
                                 options.difficulty.level = when (this.attributes["data-id"]) {
@@ -75,6 +137,7 @@ fun options(): HTMLDivElement {
                         classes += "options-switch"
                         div {
                             classes += "options-chkbx"
+                            classes += "btn"
                             attributes["data-id"] = "1"
                             onClickFunction = {
                                 options.difficulty.level = when (this.attributes["data-id"]) {
@@ -102,6 +165,7 @@ fun options(): HTMLDivElement {
                         classes += "options-switch"
                         div {
                             classes += "options-chkbx"
+                            classes += "btn"
                             attributes["data-id"] = "2"
                             onClickFunction = {
                                 options.difficulty.level = when (this.attributes["data-id"]) {
@@ -141,6 +205,7 @@ fun options(): HTMLDivElement {
                         classes += "options-switch"
                         div {
                             classes += "options-chkbx"
+                            classes += "btn"
                             attributes["data-id"] = "0"
                             onClickFunction = {
                                 options.rumble.state = when (this.attributes["data-id"]) {
@@ -166,6 +231,7 @@ fun options(): HTMLDivElement {
                         classes += "options-switch"
                         div {
                             classes += "options-chkbx"
+                            classes += "btn"
                             attributes["data-id"] = "1"
                             onClickFunction = {
                                 options.rumble.state = when (this.attributes["data-id"]) {

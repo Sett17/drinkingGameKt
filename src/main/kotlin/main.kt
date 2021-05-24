@@ -30,6 +30,9 @@ fun main() {
         handlePageChange()
     }
     window.onload = {
+        document.documentElement!!.classList.remove("themeLight")
+        document.documentElement!!.classList.remove("themeDark")
+        document.documentElement!!.classList.add(if (session["isLight"] == true) "themeLight" else "themeDark")
         document.body!!.append {
             div {
                 id = "version"

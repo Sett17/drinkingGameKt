@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="de"
-class="themeLight">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -24,31 +23,18 @@ class="themeLight">
         style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;"
         unselectable="on" onselectstart="return false">
 <noscript style="position: fixed;">Javascript has to be enabled!</noscript>
-<div id="root">
-    <!-- <img src="assets/icon.png" alt="Icon"> -->
-</div>
-
-<!-- register service worker -->
-<!--        commented while deving-->
-<script>
-    // if ('serviceWorker' in navigator) {
-    //     window.addEventListener('load', function () {
-    //         navigator.serviceWorker.register('sw.js')
-    //     })
-    // }
-</script>
-<!-- end of service worker -->
+<div id="root"></div>
 <div id="overlay" class="invisible" onclick="gameRunning.removeAsk()">
     <button class="btn" id="stopBtn" onclick="gameRunning.close()">
         Beenden?
     </button>
 </div>
 
-<script type="module">
-    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+<!--<script type="module">-->
+<!--    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';-->
 
-    const el = document.createElement('pwa-update');
-    document.body.appendChild(el);</script>
+<!--    const el = document.createElement('pwa-update');-->
+<!--    document.body.appendChild(el);</script>-->
 </body>
 
 </html>
