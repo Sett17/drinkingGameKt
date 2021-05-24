@@ -15,7 +15,7 @@ object options {
                 updateView()
             }
             get() {
-                field = field ?: run { session["isDark"] as? Boolean } ?: run { true }
+                field = field ?: run { session["isDark"] as? Boolean } ?: run { false }
                 return field
             }
 
