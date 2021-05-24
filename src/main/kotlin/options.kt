@@ -21,11 +21,11 @@ object options {
 
         fun updateView() {
             if (isDark == true) {
-                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"0\"]")?.setAttribute("active", "")
-                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"1\"]")?.removeAttribute("active")
-            } else {
                 document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"0\"]")?.removeAttribute("active")
                 document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"1\"]")?.setAttribute("active", "")
+            } else {
+                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"0\"]")?.setAttribute("active", "")
+                document.querySelector("#options-themeWrapper .options-chkbx[data-id=\"1\"]")?.removeAttribute("active")
             }
             document.documentElement!!.classList.remove("themeDark")
             document.documentElement!!.classList.remove("themeLight")
