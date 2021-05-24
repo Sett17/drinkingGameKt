@@ -3,13 +3,10 @@ package compos
 import currentPage
 import kotlinx.browser.document
 import kotlinx.browser.window
-import kotlinx.html.div
+import kotlinx.html.*
 import kotlinx.html.dom.create
-import kotlinx.html.id
 import kotlinx.html.js.div
 import kotlinx.html.js.onLoadFunction
-import kotlinx.html.span
-import kotlinx.html.unsafe
 import org.w3c.dom.HTMLDivElement
 
 fun play(): HTMLDivElement {
@@ -21,10 +18,6 @@ fun play(): HTMLDivElement {
 
     return document.create.div {
         id = "root"
-        div {
-            id = "play-name"
-            +"spater"
-        }
         div {
             id = "play-spacer"
             span {
@@ -42,11 +35,8 @@ fun play(): HTMLDivElement {
                 )
             }
         }
-        div {
-            id = "card-wrapper"
-            div {
-                id = "card"
-            }
+        canvas {
+            id = "canv"
         }
     }
 }
