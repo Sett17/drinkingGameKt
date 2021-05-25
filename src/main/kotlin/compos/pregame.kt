@@ -39,7 +39,7 @@ fun pregame(): HTMLDivElement {
                         document.querySelector("#pregame-addPlayerBtn")?.classList?.remove("pregame-hidden")
                     }
                 }
-                onFocusOutFunction = {
+                onBlurFunction = {
                     inpFocusOut()
                 }
                 onKeyUpFunction = {

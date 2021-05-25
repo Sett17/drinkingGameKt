@@ -21,6 +21,8 @@ external val self: ServiceWorkerGlobalScope
 // TODO: 5/16/2021 hiding elements on pregame on mobile bugs
 // TODO somehow make dragging way smoother; no idea how tho
 
+// TODO: 5/25/2021 scrolling is enabled -> disable
+
 const val CACHE = "v1.2.0"
 
 var currentPage = "#startmenu"
