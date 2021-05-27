@@ -86,6 +86,7 @@ html, body {
     background-color: var(--backgroundColor);
     color: var(--textColor);
     overflow: hidden;
+    overscroll-behavior: none;
     font-family: 'SF-Pro', sans-serif;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
@@ -106,6 +107,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    overscroll-behavior: none;
 }
 
 .btn {

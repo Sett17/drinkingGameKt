@@ -23,6 +23,8 @@ external val self: ServiceWorkerGlobalScope
 
 // TODO: 5/25/2021 scrolling is enabled -> disable
 
+// TODO: 5/27/2021 dialog when exiting from play compo
+
 const val CACHE = "v1.2.0"
 
 var currentPage = "#startmenu"
