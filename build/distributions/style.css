@@ -106,6 +106,10 @@ html, body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
     overflow: hidden;
     overscroll-behavior: none;
 }
